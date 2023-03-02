@@ -8,7 +8,7 @@ class ReadExecl(object):
         self.sheetname = sheetname
 
     def open(self):
-        self.wb = openpyxl.load_workbook(self.filename)
+        self.wb = openpyxl.load_workbook(self.filename, data_only=True)
         self.sh = self.wb[self.sheetname]
 
     def read_data(self, start_number):

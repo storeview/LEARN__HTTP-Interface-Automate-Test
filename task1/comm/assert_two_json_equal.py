@@ -3,7 +3,7 @@ import json
 
 
 #得到对象的类型
-def get_type_by_object(obj):
+def typeof(obj):
     return type(obj)
 
 #是否为空对象(即{})
@@ -12,32 +12,41 @@ def is_empty_object(expect_json):
         return False
     return True
 
+
 #递归判断两个json值
 def assert_two_json_equal(expect_json, new_json, jsonpath):
-    if (expect_json == None or is_empty_object(expect_json)):
-        return
-    for k in expect_json:
-        cur_jsonpath = jsonpath + "." + str(k)
-        if get_type_by_object(expect_json[k]) == list or get_type_by_object(expect_json[k]) == dict:
-            try:
-                new_json = new_json[k]
-            except:
-                new_json = None
-            if get_type_by_object(expect_json) == list:
-                assert_two_json_equal(expect_json[k], new_json, jsonpath+"["+str(k)+"]")
-            else:
-                assert_two_json_equal(expect_json[k], new_json, cur_jsonpath)
-        else:
-            test_name = "{}值为{}".format(cur_jsonpath, expect_json[k])
-            print(test_name)
-            if new_json != None:
-                print()
-            else:
-                print()
-            #unittest.TestCase.assertEqual(new_json[k], expect_json[k])
+    #无递归终止条件
+    ret = True
 
+    #当前对象是列表
+    if typeof(expect_json) == list:
+        for index, item in enumerate(expect_json):
+            try:
+                new_json2=new_json[index]
+            except:
+                new_json2=None
+            ret = ret and assert_two_json_equal(expect_json[index], new_json2, jsonpath+"["+str(index)+"]")
+    #当前对象是字典
+    elif typeof(expect_json) == dict:
+        for index, item in enumerate(expect_json):
+            try:
+                new_json2=new_json[item]
+            except:
+                new_json2=None
+            ret = ret and assert_two_json_equal(expect_json[item], new_json2, jsonpath+"."+item)
+    #当前对象是字符串, 数字, 布尔值, 空值
+    else:
+        test_name = "{} 值为 {}".format(jsonpath, expect_json)
+        print("{} - {}".format(expect_json == new_json, test_name))
+        #断言结果
+        if expect_json != new_json:
+            return False
+        return True
+    return ret
 
 if __name__=="__main__":
-    json1 = json.loads('{"code":200,"message":"success","data":{"lightAlarmType":2,"audioAlarmFiles":[{"name":"警报音","index":1,"type":1,"status":0},{"name":"请注意，您已进入监控区域","index":2,"type":1,"status":0},{"name":"危险区域，请勿靠近","index":3,"type":1,"status":1},{"name":"您好，欢迎光临","index":4,"type":1,"status":0}],"audioAlarmStatus":2,"lightAlarmStatus":2,"audioPlayCount":1,"lightAlarmFrequency":2,"lightAlarmTime":5,"gbAlarmStatus":1}}')
+    json1 = json.loads('{"code":200,"message":"success","data":{"smartStatus":1,"defenceStatus":1,"defenceTime":null,"eventStatus":1,"action":[1],"sensitivity":70,"screenShotStatus":2,"smartType":[1],"areaGroup":[{"resolution":"1920*1080","points":["0,0","0,1080","1920,1080","1920,0"]}],"showArea":2}}')
     json2 = json.loads('{"code": 401, "message": "未授权"}')
     assert_two_json_equal(json1, json2, "$")
+
+

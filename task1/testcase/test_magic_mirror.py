@@ -25,7 +25,9 @@ from comm.replace_variable import replace_variable
 @ddt
 class MagicMirrorTestCase(unittest.TestCase):
     
+    #测试用例数据
     testcase_data = ReadExecl(TESTCASE_FILE_PATH, "MagicMirror测试用例").read_data(3)
+    #变量列表数据
     variables = ReadExecl(TESTCASE_FILE_PATH, "变量列表").read_variable_data(2, 1, 2)
 
     @classmethod
@@ -51,12 +53,24 @@ class MagicMirrorTestCase(unittest.TestCase):
             resp = requests.get(url, params=payload, headers=headers)
         elif method == "POST":
             resp = requests.get(url, data=payload, headers=headers)
+        
+        #打印请求过程
+        no = value["no"]
+        title = value["title"]
+        print("\n用例编号: {}\n测试内容: {}\n{}请求地址: {}\n请求头: {}\n请求体: \n{}".format(no, title, method, url, headers, payload))
+
+        #打印响应内容
+        print("响应内容: \n{}".format(resp.json()))
+
 
         #响应断言
+        #1.返回码为200(成功)
         self.assertEqual(resp.status_code, 200)
-        
+        #2.断言两个json值完全一致
         expect_json = json.loads(value["assert"])
-        assert_two_json_equal(expect_json, resp.json(), "$")
+        #打印预期相应
+        print("预期相应: \n{}\n\n".format(expect_json))
+        self.assertTrue(assert_two_json_equal(expect_json, resp.json(), "$")) 
         
 
 if __name__=='__main__':
