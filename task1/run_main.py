@@ -20,7 +20,7 @@ suite.addTest(loader.discover(TESTCASE_DIR))
 with open(REPORT_FILE_PATH, 'wb') as report:
     runner = HTMLTestReport(stream=report,
                             title="自动化测试报告",
-                            description="魔镜终端协议测试(参数获取及设置)",
+                            description="HTTP协议测试(参数获取及设置)",
                             tester='llf')
     #执行测试套件
     runner.run(suite)

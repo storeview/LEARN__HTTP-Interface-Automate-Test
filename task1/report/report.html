@@ -311,13 +311,13 @@ a.popup_link:hover {
         </h1>
         <div style="float:left;width:50%;">
             <p class='parameters'> <p class='attribute'><strong>测试人员:</strong> llf</p>
-<p class='attribute'><strong>开始时间:</strong> 2023-03-03 16:33:16</p>
-<p class='attribute'><strong>运行时长:</strong> 0:00:02.887430</p>
-<p class='attribute'><strong>测试结果:</strong> 共 7  通过 6 失败 1  通过率:85.7%</p>
+<p class='attribute'><strong>开始时间:</strong> 2023-03-03 17:08:05</p>
+<p class='attribute'><strong>运行时长:</strong> 0:00:11.266005</p>
+<p class='attribute'><strong>测试结果:</strong> 共 9  通过 6 失败 3  通过率:66.7%</p>
 </p>
             <br>
             <br>
-            <p class='description'> 魔镜终端协议测试(参数获取及设置)</p>
+            <p class='description'> HTTP协议测试(参数获取及设置)</p>
         </div>
         <div id="chart" style="float:left;width:50%;height:250px;"></di>
     </div>
@@ -352,39 +352,39 @@ a.popup_link:hover {
 
 <tr class='failClass'>
     <td>test_ipc_web_api.IPCWebTestCase</td>
-    <td>7</td>
+    <td>9</td>
     <td>6</td>
-    <td>1</td>
+    <td>3</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1',7)">详情</a></td>
+    <td><a href="javascript:showClassDetail('c1',9)">详情</a></td>
 </tr>
 
-<tr id='pt1_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_api_1</div></td>
+<tr id='ft1_1' class='none'>
+    <td class='failCase'><div class='testcase'>test_api_1</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1_1')" >
-        通过</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1_1')" >
+        失败</a>
 
-    <div id='div_pt1_1' class="popup_window">
+    <div id='div_ft1_1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1_1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1_1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt1_1: 
+ft1_1: 
 用例编号: IPCWeb-API-testcase__002
 测试内容: 获取 音频配置 参数
-POST请求地址: http://128.128.144.65/jvt_v1/audio_info/get_audio_param?requestTime=1676073963335
+POST请求地址: http://128.128.144.63/jvt_v1/audio_info/get_audio_param?requestTime=1676073963335
 请求头: None
 请求体: 
-{"action":"get_audio_param","req_id":"54C3E1D5-855F-AB4F-8C9A-B481CB500583"}
+{"action":"get_audio_param","req_id":"32F5D913-2AAA-4147-BDCF-E9AAF452A92B"}
 响应内容: 
-{'data': {'audio_enable': 1, 'audio_input_enable': 1, 'audio_input_format': {'select_content': [{'id': 0, 'name': 'G711U'}, {'id': 1, 'name': 'G711A'}], 'select_index': 1}, 'in_volume': {'current': 100, 'range': [0, 100]}, 'out_volume': {'current': 12, 'range': [0, 100]}, 'silence_upgrade_enable': 0}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
+{'data': {'audio_enable': 1, 'audio_input_enable': 1, 'audio_input_format': {'select_content': [{'id': 0, 'name': 'G711U'}, {'id': 1, 'name': 'G711A'}], 'select_index': 1}, 'in_volume': {'current': 80, 'range': [0, 100]}, 'out_volume': {'current': 100, 'range': [0, 100]}, 'silence_upgrade_enable': 0}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '32F5D913-2AAA-4147-BDCF-E9AAF452A92B'}
 预期相应: 
-{'data': {'audio_enable': 1, 'audio_input_enable': 1, 'audio_input_format': {'select_content': [{'id': 0, 'name': 'G711U'}, {'id': 1, 'name': 'G711A'}], 'select_index': 1}, 'in_volume': {'current': 100, 'range': [0, 100]}, 'out_volume': {'current': 12, 'range': [0, 100]}, 'silence_upgrade_enable': 0}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
+{'data': {'audio_enable': 1, 'audio_input_enable': 1, 'audio_input_format': {'select_content': [{'id': 0, 'name': 'G711U'}, {'id': 1, 'name': 'G711A'}], 'select_index': 1}, 'in_volume': {'current': 100, 'range': [0, 100]}, 'out_volume': {'current': 12, 'range': [0, 100]}, 'silence_upgrade_enable': 0}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '32F5D913-2AAA-4147-BDCF-E9AAF452A92B'}
 
 
 True - $.data.audio_enable 值为 1
@@ -394,17 +394,16 @@ True - $.data.audio_input_format.select_content[0].name 值为 G711U
 True - $.data.audio_input_format.select_content[1].id 值为 1
 True - $.data.audio_input_format.select_content[1].name 值为 G711A
 True - $.data.audio_input_format.select_index 值为 1
-True - $.data.in_volume.current 值为 100
-True - $.data.in_volume.range[0] 值为 0
-True - $.data.in_volume.range[1] 值为 100
-True - $.data.out_volume.current 值为 12
-True - $.data.out_volume.range[0] 值为 0
-True - $.data.out_volume.range[1] 值为 100
-True - $.data.silence_upgrade_enable 值为 0
-True - $.err_code 值为 0
-True - $.err_msg 值为 ok
-True - $.req_id 值为 54C3E1D5-855F-AB4F-8C9A-B481CB500583
-
+--------------------&gt; False - $.data.in_volume.current 值为 100 &lt;--------------------
+Traceback (most recent call last):
+  File "F:\Python\Python311\Lib\site-packages\ddt.py", line 220, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\岑小林\Documents\GitHub\LEARN__HTTP-Interface-Automate-Test\task1\testcase\test_ipc_web_api.py", line 90, in test_api
+    raise e
+  File "c:\Users\岑小林\Documents\GitHub\LEARN__HTTP-Interface-Automate-Test\task1\testcase\test_ipc_web_api.py", line 86, in test_api
+    self.assertTrue(assert_two_json_equal(expect_json, resp.json(), "$"), "和预期的JSON值不同")
+AssertionError: False is not true : 和预期的JSON值不同
 
 
         </pre>
@@ -432,14 +431,14 @@ True - $.req_id 值为 54C3E1D5-855F-AB4F-8C9A-B481CB500583
 pt1_2: 
 用例编号: IPCWeb-API-testcase__003
 测试内容: 获取 字符叠加 参数
-POST请求地址: http://128.128.144.65/jvt_v1/video/get_osd_info?requestTime=1676074771994
+POST请求地址: http://128.128.144.63/jvt_v1/video/get_osd_info?requestTime=1676074771994
 请求头: None
 请求体: 
-{"req_id":"54C3E1D5-855F-AB4F-8C9A-B481CB500583"}
+{"req_id":"32F5D913-2AAA-4147-BDCF-E9AAF452A92B"}
 响应内容: 
-{'data': {'osd_date_enable': 1, 'osd_date_format': {'select_content': [{'id': 0, 'name': 'YYYY-MM-DD'}, {'id': 1, 'name': 'MM-DD-YYYY'}, {'id': 2, 'name': 'DD-MM-YYYY'}], 'select_index': 0}, 'osd_main_size': {'select_content': [{'id': 0, 'name': '小'}, {'id': 1, 'name': '中'}, {'id': 2, 'name': '大'}, {'id': 3, 'name': '自适应'}], 'select_index': 3}, 'osd_maxlen': 32, 'osd_sub_size': {'select_content': [{'id': 0, 'name': '小'}, {'id': 1, 'name': '中'}, {'id': 2, 'name': '大'}, {'id': 3, 'name': '自适应'}], 'select_index': 3}, 'osd_text': [{'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 3, 'osd_text_y': 96}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 98, 'osd_text_y': 97}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 81}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 84}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 87}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 90}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 93}], 'osd_time_enable': 1, 'osd_time_x': 97, 'osd_time_y': 9, 'osd_week_enable': 1}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
+{'data': {'osd_date_enable': 1, 'osd_date_format': {'select_content': [{'id': 0, 'name': 'YYYY-MM-DD'}, {'id': 1, 'name': 'MM-DD-YYYY'}, {'id': 2, 'name': 'DD-MM-YYYY'}], 'select_index': 0}, 'osd_main_size': {'select_content': [{'id': 0, 'name': '小'}, {'id': 1, 'name': '中'}, {'id': 2, 'name': '大'}, {'id': 3, 'name': '自适应'}], 'select_index': 3}, 'osd_maxlen': 32, 'osd_sub_size': {'select_content': [{'id': 0, 'name': '小'}, {'id': 1, 'name': '中'}, {'id': 2, 'name': '大'}, {'id': 3, 'name': '自适应'}], 'select_index': 3}, 'osd_text': [{'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 3, 'osd_text_y': 96}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 98, 'osd_text_y': 97}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 81}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 84}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 87}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 90}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 93}], 'osd_time_enable': 1, 'osd_time_x': 97, 'osd_time_y': 9, 'osd_week_enable': 1}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '32F5D913-2AAA-4147-BDCF-E9AAF452A92B'}
 预期相应: 
-{'data': {'osd_date_enable': 1, 'osd_date_format': {'select_content': [{'id': 0, 'name': 'YYYY-MM-DD'}, {'id': 1, 'name': 'MM-DD-YYYY'}, {'id': 2, 'name': 'DD-MM-YYYY'}], 'select_index': 0}, 'osd_main_size': {'select_content': [{'id': 0, 'name': '小'}, {'id': 1, 'name': '中'}, {'id': 2, 'name': '大'}, {'id': 3, 'name': '自适应'}], 'select_index': 3}, 'osd_maxlen': 32, 'osd_sub_size': {'select_content': [{'id': 0, 'name': '小'}, {'id': 1, 'name': '中'}, {'id': 2, 'name': '大'}, {'id': 3, 'name': '自适应'}], 'select_index': 3}, 'osd_text': [{'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 3, 'osd_text_y': 96}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 98, 'osd_text_y': 97}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 81}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 84}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 87}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 90}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 93}], 'osd_time_enable': 1, 'osd_time_x': 97, 'osd_time_y': 9, 'osd_week_enable': 1}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
+{'data': {'osd_date_enable': 1, 'osd_date_format': {'select_content': [{'id': 0, 'name': 'YYYY-MM-DD'}, {'id': 1, 'name': 'MM-DD-YYYY'}, {'id': 2, 'name': 'DD-MM-YYYY'}], 'select_index': 0}, 'osd_main_size': {'select_content': [{'id': 0, 'name': '小'}, {'id': 1, 'name': '中'}, {'id': 2, 'name': '大'}, {'id': 3, 'name': '自适应'}], 'select_index': 3}, 'osd_maxlen': 32, 'osd_sub_size': {'select_content': [{'id': 0, 'name': '小'}, {'id': 1, 'name': '中'}, {'id': 2, 'name': '大'}, {'id': 3, 'name': '自适应'}], 'select_index': 3}, 'osd_text': [{'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 3, 'osd_text_y': 96}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 98, 'osd_text_y': 97}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 81}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 84}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 87}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 90}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 93}], 'osd_time_enable': 1, 'osd_time_x': 97, 'osd_time_y': 9, 'osd_week_enable': 1}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '32F5D913-2AAA-4147-BDCF-E9AAF452A92B'}
 
 
 True - $.data.osd_date_enable 值为 1
@@ -510,7 +509,7 @@ True - $.data.osd_time_y 值为 9
 True - $.data.osd_week_enable 值为 1
 True - $.err_code 值为 0
 True - $.err_msg 值为 ok
-True - $.req_id 值为 54C3E1D5-855F-AB4F-8C9A-B481CB500583
+True - $.req_id 值为 32F5D913-2AAA-4147-BDCF-E9AAF452A92B
 
 
 
@@ -521,32 +520,32 @@ True - $.req_id 值为 54C3E1D5-855F-AB4F-8C9A-B481CB500583
     </td>
 </tr>
 
-<tr id='pt1_3' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_api_3</div></td>
+<tr id='ft1_3' class='none'>
+    <td class='failCase'><div class='testcase'>test_api_3</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1_3')" >
-        通过</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1_3')" >
+        失败</a>
 
-    <div id='div_pt1_3' class="popup_window">
+    <div id='div_ft1_3' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1_3').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1_3').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt1_3: 
+ft1_3: 
 用例编号: IPCWeb-API-testcase__004
 测试内容: 获取 视频编码 参数
-POST请求地址: http://128.128.144.65/jvt_v1/video/get_video_param?requestTime=1676074870200
+POST请求地址: http://128.128.144.63/jvt_v1/video/get_video_param?requestTime=1676074870200
 请求头: None
 请求体: 
-{"test":"11","req_id":"54C3E1D5-855F-AB4F-8C9A-B481CB500583"}
+{"test":"11","req_id":"32F5D913-2AAA-4147-BDCF-E9AAF452A92B"}
 响应内容: 
-{'data': {'main_advanced_enable': 1, 'main_code_bitrate': {'current': 2048, 'range': [64, 8192]}, 'main_code_rate_control': {'select_content': [{'id': 0, 'name': '定码率'}, {'id': 1, 'name': '变码率'}], 'select_index': 1}, 'main_encode_type': {'select_content': [{'id': 2, 'name': 'H.264'}, {'id': 3, 'name': 'H.265'}], 'select_index': 3}, 'main_frame_rate': {'current': 15, 'range': [1, 25]}, 'main_iframe_interval': {'current': 30, 'range': [15, 75]}, 'main_quality': {'select_content': [{'id': 0, 'name': '高'}, {'id': 1, 'name': '中'}, {'id': 2, 'name': '低'}], 'select_index': 0}, 'main_resolution': {'select_content': [{'id': 0, 'name': '2560x1440'}, {'id': 1, 'name': '1920x1080'}, {'id': 2, 'name': '1280x960'}, {'id': 3, 'name': '1280x720'}], 'select_index': 0}, 'need_reboot': 1, 'sub_code_bitrate': {'current': 768, 'range': [64, 2048]}, 'sub_code_rate_control': {'select_content': [{'id': 0, 'name': '定码率'}, {'id': 1, 'name': '变码率'}], 'select_index': 1}, 'sub_encode_type': {'select_content': [{'id': 2, 'name': 'H.264'}, {'id': 3, 'name': 'H.265'}], 'select_index': 3}, 'sub_frame_rate': {'current': 15, 'range': [1, 25]}, 'sub_iframe_interval': {'current': 30, 'range': [15, 75]}, 'sub_quality': {'select_content': [{'id': 0, 'name': '高'}, {'id': 1, 'name': '中'}, {'id': 2, 'name': '低'}], 'select_index': 0}, 'sub_resolution': {'select_content': [{'id': 0, 'name': '1280x720'}, {'id': 1, 'name': '704x576'}, {'id': 2, 'name': '640x480'}], 'select_index': 1}}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
+{'data': {'main_advanced_enable': 1, 'main_code_bitrate': {'current': 2048, 'range': [64, 8192]}, 'main_code_rate_control': {'select_content': [{'id': 0, 'name': '定码率'}, {'id': 1, 'name': '变码率'}], 'select_index': 1}, 'main_encode_type': {'select_content': [{'id': 2, 'name': 'H.264'}, {'id': 3, 'name': 'H.265'}], 'select_index': 3}, 'main_frame_rate': {'current': 25, 'range': [1, 25]}, 'main_iframe_interval': {'current': 50, 'range': [25, 125]}, 'main_quality': {'select_content': [{'id': 0, 'name': '高'}, {'id': 1, 'name': '中'}, {'id': 2, 'name': '低'}], 'select_index': 0}, 'main_resolution': {'select_content': [{'id': 0, 'name': '3840x2160'}, {'id': 1, 'name': '2560x1440'}, {'id': 2, 'name': '1920x1080'}, {'id': 3, 'name': '1280x960'}, {'id': 4, 'name': '1280x720'}], 'select_index': 0}, 'need_reboot': 1, 'sub_code_bitrate': {'current': 768, 'range': [64, 2048]}, 'sub_code_rate_control': {'select_content': [{'id': 0, 'name': '定码率'}, {'id': 1, 'name': '变码率'}], 'select_index': 1}, 'sub_encode_type': {'select_content': [{'id': 2, 'name': 'H.264'}, {'id': 3, 'name': 'H.265'}], 'select_index': 3}, 'sub_frame_rate': {'current': 25, 'range': [1, 25]}, 'sub_iframe_interval': {'current': 50, 'range': [25, 125]}, 'sub_quality': {'select_content': [{'id': 0, 'name': '高'}, {'id': 1, 'name': '中'}, {'id': 2, 'name': '低'}], 'select_index': 0}, 'sub_resolution': {'select_content': [{'id': 0, 'name': '1920x1080'}, {'id': 1, 'name': '640x480'}, {'id': 2, 'name': '704x576'}], 'select_index': 0}}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '32F5D913-2AAA-4147-BDCF-E9AAF452A92B'}
 预期相应: 
-{'data': {'main_advanced_enable': 1, 'main_code_bitrate': {'current': 2048, 'range': [64, 8192]}, 'main_code_rate_control': {'select_content': [{'id': 0, 'name': '定码率'}, {'id': 1, 'name': '变码率'}], 'select_index': 1}, 'main_encode_type': {'select_content': [{'id': 2, 'name': 'H.264'}, {'id': 3, 'name': 'H.265'}], 'select_index': 3}, 'main_frame_rate': {'current': 15, 'range': [1, 25]}, 'main_iframe_interval': {'current': 30, 'range': [15, 75]}, 'main_quality': {'select_content': [{'id': 0, 'name': '高'}, {'id': 1, 'name': '中'}, {'id': 2, 'name': '低'}], 'select_index': 0}, 'main_resolution': {'select_content': [{'id': 0, 'name': '2560x1440'}, {'id': 1, 'name': '1920x1080'}, {'id': 2, 'name': '1280x960'}, {'id': 3, 'name': '1280x720'}], 'select_index': 0}, 'need_reboot': 1, 'sub_code_bitrate': {'current': 768, 'range': [64, 2048]}, 'sub_code_rate_control': {'select_content': [{'id': 0, 'name': '定码率'}, {'id': 1, 'name': '变码率'}], 'select_index': 1}, 'sub_encode_type': {'select_content': [{'id': 2, 'name': 'H.264'}, {'id': 3, 'name': 'H.265'}], 'select_index': 3}, 'sub_frame_rate': {'current': 15, 'range': [1, 25]}, 'sub_iframe_interval': {'current': 30, 'range': [15, 75]}, 'sub_quality': {'select_content': [{'id': 0, 'name': '高'}, {'id': 1, 'name': '中'}, {'id': 2, 'name': '低'}], 'select_index': 0}, 'sub_resolution': {'select_content': [{'id': 0, 'name': '1280x720'}, {'id': 1, 'name': '704x576'}, {'id': 2, 'name': '640x480'}], 'select_index': 1}}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
+{'data': {'main_advanced_enable': 1, 'main_code_bitrate': {'current': 2048, 'range': [64, 8192]}, 'main_code_rate_control': {'select_content': [{'id': 0, 'name': '定码率'}, {'id': 1, 'name': '变码率'}], 'select_index': 1}, 'main_encode_type': {'select_content': [{'id': 2, 'name': 'H.264'}, {'id': 3, 'name': 'H.265'}], 'select_index': 3}, 'main_frame_rate': {'current': 15, 'range': [1, 25]}, 'main_iframe_interval': {'current': 30, 'range': [15, 75]}, 'main_quality': {'select_content': [{'id': 0, 'name': '高'}, {'id': 1, 'name': '中'}, {'id': 2, 'name': '低'}], 'select_index': 0}, 'main_resolution': {'select_content': [{'id': 0, 'name': '2560x1440'}, {'id': 1, 'name': '1920x1080'}, {'id': 2, 'name': '1280x960'}, {'id': 3, 'name': '1280x720'}], 'select_index': 0}, 'need_reboot': 1, 'sub_code_bitrate': {'current': 768, 'range': [64, 2048]}, 'sub_code_rate_control': {'select_content': [{'id': 0, 'name': '定码率'}, {'id': 1, 'name': '变码率'}], 'select_index': 1}, 'sub_encode_type': {'select_content': [{'id': 2, 'name': 'H.264'}, {'id': 3, 'name': 'H.265'}], 'select_index': 3}, 'sub_frame_rate': {'current': 15, 'range': [1, 25]}, 'sub_iframe_interval': {'current': 30, 'range': [15, 75]}, 'sub_quality': {'select_content': [{'id': 0, 'name': '高'}, {'id': 1, 'name': '中'}, {'id': 2, 'name': '低'}], 'select_index': 0}, 'sub_resolution': {'select_content': [{'id': 0, 'name': '1280x720'}, {'id': 1, 'name': '704x576'}, {'id': 2, 'name': '640x480'}], 'select_index': 1}}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '32F5D913-2AAA-4147-BDCF-E9AAF452A92B'}
 
 
 True - $.data.main_advanced_enable 值为 1
@@ -563,66 +562,16 @@ True - $.data.main_encode_type.select_content[0].name 值为 H.264
 True - $.data.main_encode_type.select_content[1].id 值为 3
 True - $.data.main_encode_type.select_content[1].name 值为 H.265
 True - $.data.main_encode_type.select_index 值为 3
-True - $.data.main_frame_rate.current 值为 15
-True - $.data.main_frame_rate.range[0] 值为 1
-True - $.data.main_frame_rate.range[1] 值为 25
-True - $.data.main_iframe_interval.current 值为 30
-True - $.data.main_iframe_interval.range[0] 值为 15
-True - $.data.main_iframe_interval.range[1] 值为 75
-True - $.data.main_quality.select_content[0].id 值为 0
-True - $.data.main_quality.select_content[0].name 值为 高
-True - $.data.main_quality.select_content[1].id 值为 1
-True - $.data.main_quality.select_content[1].name 值为 中
-True - $.data.main_quality.select_content[2].id 值为 2
-True - $.data.main_quality.select_content[2].name 值为 低
-True - $.data.main_quality.select_index 值为 0
-True - $.data.main_resolution.select_content[0].id 值为 0
-True - $.data.main_resolution.select_content[0].name 值为 2560x1440
-True - $.data.main_resolution.select_content[1].id 值为 1
-True - $.data.main_resolution.select_content[1].name 值为 1920x1080
-True - $.data.main_resolution.select_content[2].id 值为 2
-True - $.data.main_resolution.select_content[2].name 值为 1280x960
-True - $.data.main_resolution.select_content[3].id 值为 3
-True - $.data.main_resolution.select_content[3].name 值为 1280x720
-True - $.data.main_resolution.select_index 值为 0
-True - $.data.need_reboot 值为 1
-True - $.data.sub_code_bitrate.current 值为 768
-True - $.data.sub_code_bitrate.range[0] 值为 64
-True - $.data.sub_code_bitrate.range[1] 值为 2048
-True - $.data.sub_code_rate_control.select_content[0].id 值为 0
-True - $.data.sub_code_rate_control.select_content[0].name 值为 定码率
-True - $.data.sub_code_rate_control.select_content[1].id 值为 1
-True - $.data.sub_code_rate_control.select_content[1].name 值为 变码率
-True - $.data.sub_code_rate_control.select_index 值为 1
-True - $.data.sub_encode_type.select_content[0].id 值为 2
-True - $.data.sub_encode_type.select_content[0].name 值为 H.264
-True - $.data.sub_encode_type.select_content[1].id 值为 3
-True - $.data.sub_encode_type.select_content[1].name 值为 H.265
-True - $.data.sub_encode_type.select_index 值为 3
-True - $.data.sub_frame_rate.current 值为 15
-True - $.data.sub_frame_rate.range[0] 值为 1
-True - $.data.sub_frame_rate.range[1] 值为 25
-True - $.data.sub_iframe_interval.current 值为 30
-True - $.data.sub_iframe_interval.range[0] 值为 15
-True - $.data.sub_iframe_interval.range[1] 值为 75
-True - $.data.sub_quality.select_content[0].id 值为 0
-True - $.data.sub_quality.select_content[0].name 值为 高
-True - $.data.sub_quality.select_content[1].id 值为 1
-True - $.data.sub_quality.select_content[1].name 值为 中
-True - $.data.sub_quality.select_content[2].id 值为 2
-True - $.data.sub_quality.select_content[2].name 值为 低
-True - $.data.sub_quality.select_index 值为 0
-True - $.data.sub_resolution.select_content[0].id 值为 0
-True - $.data.sub_resolution.select_content[0].name 值为 1280x720
-True - $.data.sub_resolution.select_content[1].id 值为 1
-True - $.data.sub_resolution.select_content[1].name 值为 704x576
-True - $.data.sub_resolution.select_content[2].id 值为 2
-True - $.data.sub_resolution.select_content[2].name 值为 640x480
-True - $.data.sub_resolution.select_index 值为 1
-True - $.err_code 值为 0
-True - $.err_msg 值为 ok
-True - $.req_id 值为 54C3E1D5-855F-AB4F-8C9A-B481CB500583
-
+--------------------&gt; False - $.data.main_frame_rate.current 值为 15 &lt;--------------------
+Traceback (most recent call last):
+  File "F:\Python\Python311\Lib\site-packages\ddt.py", line 220, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\岑小林\Documents\GitHub\LEARN__HTTP-Interface-Automate-Test\task1\testcase\test_ipc_web_api.py", line 90, in test_api
+    raise e
+  File "c:\Users\岑小林\Documents\GitHub\LEARN__HTTP-Interface-Automate-Test\task1\testcase\test_ipc_web_api.py", line 86, in test_api
+    self.assertTrue(assert_two_json_equal(expect_json, resp.json(), "$"), "和预期的JSON值不同")
+AssertionError: False is not true : 和预期的JSON值不同
 
 
         </pre>
@@ -650,14 +599,14 @@ True - $.req_id 值为 54C3E1D5-855F-AB4F-8C9A-B481CB500583
 pt1_4: 
 用例编号: IPCWeb-API-testcase__005
 测试内容: 获取 亮色调节 参数
-POST请求地址: http://128.128.144.65/jvt_v1/video/get_image_param?requestTime=1676074913640
+POST请求地址: http://128.128.144.63/jvt_v1/video/get_image_param?requestTime=1676074913640
 请求头: None
 请求体: 
-{"req_id":"54C3E1D5-855F-AB4F-8C9A-B481CB500583"}
+{"req_id":"32F5D913-2AAA-4147-BDCF-E9AAF452A92B"}
 响应内容: 
-{'data': {'brightness': 128, 'constract': 128, 'saturation': 128, 'sharpness': 128}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
+{'data': {'brightness': 128, 'constract': 128, 'saturation': 128, 'sharpness': 128}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '32F5D913-2AAA-4147-BDCF-E9AAF452A92B'}
 预期相应: 
-{'data': {'brightness': 128, 'constract': 128, 'saturation': 128, 'sharpness': 128}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
+{'data': {'brightness': 128, 'constract': 128, 'saturation': 128, 'sharpness': 128}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '32F5D913-2AAA-4147-BDCF-E9AAF452A92B'}
 
 
 True - $.data.brightness 值为 128
@@ -666,7 +615,7 @@ True - $.data.saturation 值为 128
 True - $.data.sharpness 值为 128
 True - $.err_code 值为 0
 True - $.err_msg 值为 ok
-True - $.req_id 值为 54C3E1D5-855F-AB4F-8C9A-B481CB500583
+True - $.req_id 值为 32F5D913-2AAA-4147-BDCF-E9AAF452A92B
 
 
 
@@ -695,41 +644,21 @@ True - $.req_id 值为 54C3E1D5-855F-AB4F-8C9A-B481CB500583
 ft1_5: 
 用例编号: IPCWeb-API-testcase__006
 测试内容: 获取 基本设置 参数
-POST请求地址: http://128.128.144.65/jvt_v1/video/get_video_base_param?requestTime=1676074913640
+POST请求地址: http://128.128.144.63/jvt_v1/video/get_video_base_param?requestTime=1676074913640
 请求头: None
 请求体: 
-{"req_id":"54C3E1D5-855F-AB4F-8C9A-B481CB500583"}
+{"req_id":"32F5D913-2AAA-4147-BDCF-E9AAF452A92B"}
 响应内容: 
-{'data': {'dark_time_hour': 18, 'dark_time_minute': 0, 'dawn_time_hour': 6, 'dawn_time_minute': 30, 'dnr_3d': {'current': 150, 'range': [0, 255]}, 'flip': 0, 'ircut_mode': {'select_content': [{'id': 0, 'name': '自动'}, {'id': 1, 'name': '彩色'}, {'id': 2, 'name': '黑白'}, {'id': 3, 'name': '时间控制'}], 'select_index': 2}, 'mirror': 0, 'rotate_angle': {'select_content': [{'id': 0, 'name': '0'}, {'id': 1, 'name': '90'}, {'id': 2, 'name': '180'}, {'id': 3, 'name': '270'}], 'select_index': 0}, 'video_format': {'select_content': [{'id': 0, 'name': 'NTSC(60HZ)'}, {'id': 1, 'name': 'PAL(50HZ)'}], 'select_index': 1}}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
+{'data': {'dark_time_hour': 18, 'dark_time_minute': 0, 'dawn_time_hour': 6, 'dawn_time_minute': 30, 'dnr_3d': {'current': 128, 'range': [0, 255]}, 'flip': 0, 'ircut_mode': {'select_content': [{'id': 0, 'name': '自动'}, {'id': 1, 'name': '彩色'}, {'id': 2, 'name': '黑白'}, {'id': 3, 'name': '时间控制'}], 'select_index': 2}, 'mirror': 0, 'rotate_angle': {'select_content': [{'id': 0, 'name': '0'}, {'id': 1, 'name': '90'}, {'id': 2, 'name': '180'}, {'id': 3, 'name': '270'}], 'select_index': 0}, 'video_format': {'select_content': [{'id': 0, 'name': 'NTSC(60HZ)'}, {'id': 1, 'name': 'PAL(50HZ)'}], 'select_index': 1}}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '32F5D913-2AAA-4147-BDCF-E9AAF452A92B'}
 预期相应: 
-{'data': {'dark_time_hour': 18, 'dark_time_minute': 0, 'dawn_time_hour': 6, 'dawn_time_minute': 30, 'dnr_3d': {'current': 150, 'range': [0, 255]}, 'flip': 0, 'ircut_mode': {'select_content': [{'id': 0, 'name': '自动'}, {'id': 1, 'name': '彩色'}, {'id': 2, 'name': '黑白'}, {'id': 3, 'name': '时间控制'}], 'select_index': 2}, 'mirror': 0, 'rotate_angle': {'select_content': [{'id': 0, 'name': '0'}, {'id': 1, 'name': '90'}, {'id': 2, 'name': '180'}, {'id': 2, 'name': '270'}], 'select_index': 0}, 'video_format': {'select_content': [{'id': 0, 'name': 'NTSC(60HZ)'}, {'id': 1, 'name': 'PAL(50HZ)'}], 'select_index': 1}}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
+{'data': {'dark_time_hour': 18, 'dark_time_minute': 0, 'dawn_time_hour': 6, 'dawn_time_minute': 30, 'dnr_3d': {'current': 150, 'range': [0, 255]}, 'flip': 0, 'ircut_mode': {'select_content': [{'id': 0, 'name': '自动'}, {'id': 1, 'name': '彩色'}, {'id': 2, 'name': '黑白'}, {'id': 3, 'name': '时间控制'}], 'select_index': 2}, 'mirror': 0, 'rotate_angle': {'select_content': [{'id': 0, 'name': '0'}, {'id': 1, 'name': '90'}, {'id': 2, 'name': '180'}, {'id': 2, 'name': '270'}], 'select_index': 0}, 'video_format': {'select_content': [{'id': 0, 'name': 'NTSC(60HZ)'}, {'id': 1, 'name': 'PAL(50HZ)'}], 'select_index': 1}}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '32F5D913-2AAA-4147-BDCF-E9AAF452A92B'}
 
 
 True - $.data.dark_time_hour 值为 18
 True - $.data.dark_time_minute 值为 0
 True - $.data.dawn_time_hour 值为 6
 True - $.data.dawn_time_minute 值为 30
-True - $.data.dnr_3d.current 值为 150
-True - $.data.dnr_3d.range[0] 值为 0
-True - $.data.dnr_3d.range[1] 值为 255
-True - $.data.flip 值为 0
-True - $.data.ircut_mode.select_content[0].id 值为 0
-True - $.data.ircut_mode.select_content[0].name 值为 自动
-True - $.data.ircut_mode.select_content[1].id 值为 1
-True - $.data.ircut_mode.select_content[1].name 值为 彩色
-True - $.data.ircut_mode.select_content[2].id 值为 2
-True - $.data.ircut_mode.select_content[2].name 值为 黑白
-True - $.data.ircut_mode.select_content[3].id 值为 3
-True - $.data.ircut_mode.select_content[3].name 值为 时间控制
-True - $.data.ircut_mode.select_index 值为 2
-True - $.data.mirror 值为 0
-True - $.data.rotate_angle.select_content[0].id 值为 0
-True - $.data.rotate_angle.select_content[0].name 值为 0
-True - $.data.rotate_angle.select_content[1].id 值为 1
-True - $.data.rotate_angle.select_content[1].name 值为 90
-True - $.data.rotate_angle.select_content[2].id 值为 2
-True - $.data.rotate_angle.select_content[2].name 值为 180
---------------------&gt; False - $.data.rotate_angle.select_content[3].id 值为 2 &lt;--------------------
+--------------------&gt; False - $.data.dnr_3d.current 值为 150 &lt;--------------------
 Traceback (most recent call last):
   File "F:\Python\Python311\Lib\site-packages\ddt.py", line 220, in wrapper
     return func(self, *args, **kwargs)
@@ -766,14 +695,14 @@ AssertionError: False is not true : 和预期的JSON值不同
 pt1_6: 
 用例编号: IPCWeb-API-testcase__007
 测试内容: 获取 高级设置 参数
-POST请求地址: http://128.128.144.65/jvt_v1/image/get_video_advance_param?requestTime=1676074913640
+POST请求地址: http://128.128.144.63/jvt_v1/image/get_video_advance_param?requestTime=1676074913640
 请求头: None
 请求体: 
-{"req_id":"54C3E1D5-855F-AB4F-8C9A-B481CB500583"}
+{"req_id":"32F5D913-2AAA-4147-BDCF-E9AAF452A92B"}
 响应内容: 
-{'data': {'analog_gain': {'current': 128, 'range': [1, 255]}, 'expose_mode': {'select_content': [{'id': 0, 'name': '自动'}, {'id': 1, 'name': '手动'}], 'select_index': 0}, 'expose_time': {'select_content': [{'id': 0, 'name': 25}, {'id': 1, 'name': 30}, {'id': 2, 'name': 75}, {'id': 3, 'name': 100}, {'id': 4, 'name': 120}, {'id': 5, 'name': 150}, {'id': 6, 'name': 250}, {'id': 7, 'name': 300}, {'id': 8, 'name': 425}, {'id': 9, 'name': 600}, {'id': 10, 'name': 1000}, {'id': 11, 'name': 1250}, {'id': 12, 'name': 1750}, {'id': 13, 'name': 2500}, {'id': 14, 'name': 3000}, {'id': 15, 'name': 6000}, {'id': 16, 'name': 10000}], 'select_index': 0}, 'white_balance_blue': 128, 'white_balance_grenn': 128, 'white_balance_mode': 0, 'white_balance_red': 128}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
+{'data': {'analog_gain': {'current': 128, 'range': [1, 255]}, 'expose_mode': {'select_content': [{'id': 0, 'name': '自动'}, {'id': 1, 'name': '手动'}], 'select_index': 0}, 'expose_time': {'select_content': [{'id': 0, 'name': 25}, {'id': 1, 'name': 30}, {'id': 2, 'name': 75}, {'id': 3, 'name': 100}, {'id': 4, 'name': 120}, {'id': 5, 'name': 150}, {'id': 6, 'name': 250}, {'id': 7, 'name': 300}, {'id': 8, 'name': 425}, {'id': 9, 'name': 600}, {'id': 10, 'name': 1000}, {'id': 11, 'name': 1250}, {'id': 12, 'name': 1750}, {'id': 13, 'name': 2500}, {'id': 14, 'name': 3000}, {'id': 15, 'name': 6000}, {'id': 16, 'name': 10000}], 'select_index': 0}, 'white_balance_blue': 128, 'white_balance_grenn': 128, 'white_balance_mode': 0, 'white_balance_red': 128}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '32F5D913-2AAA-4147-BDCF-E9AAF452A92B'}
 预期相应: 
-{'data': {'analog_gain': {'current': 128, 'range': [1, 255]}, 'expose_mode': {'select_content': [{'id': 0, 'name': '自动'}, {'id': 1, 'name': '手动'}], 'select_index': 0}, 'expose_time': {'select_content': [{'id': 0, 'name': 25}, {'id': 1, 'name': 30}, {'id': 2, 'name': 75}, {'id': 3, 'name': 100}, {'id': 4, 'name': 120}, {'id': 5, 'name': 150}, {'id': 6, 'name': 250}, {'id': 7, 'name': 300}, {'id': 8, 'name': 425}, {'id': 9, 'name': 600}, {'id': 10, 'name': 1000}, {'id': 11, 'name': 1250}, {'id': 12, 'name': 1750}, {'id': 13, 'name': 2500}, {'id': 14, 'name': 3000}, {'id': 15, 'name': 6000}, {'id': 16, 'name': 10000}], 'select_index': 0}, 'white_balance_blue': 128, 'white_balance_grenn': 128, 'white_balance_mode': 0, 'white_balance_red': 128}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
+{'data': {'analog_gain': {'current': 128, 'range': [1, 255]}, 'expose_mode': {'select_content': [{'id': 0, 'name': '自动'}, {'id': 1, 'name': '手动'}], 'select_index': 0}, 'expose_time': {'select_content': [{'id': 0, 'name': 25}, {'id': 1, 'name': 30}, {'id': 2, 'name': 75}, {'id': 3, 'name': 100}, {'id': 4, 'name': 120}, {'id': 5, 'name': 150}, {'id': 6, 'name': 250}, {'id': 7, 'name': 300}, {'id': 8, 'name': 425}, {'id': 9, 'name': 600}, {'id': 10, 'name': 1000}, {'id': 11, 'name': 1250}, {'id': 12, 'name': 1750}, {'id': 13, 'name': 2500}, {'id': 14, 'name': 3000}, {'id': 15, 'name': 6000}, {'id': 16, 'name': 10000}], 'select_index': 0}, 'white_balance_blue': 128, 'white_balance_grenn': 128, 'white_balance_mode': 0, 'white_balance_red': 128}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '32F5D913-2AAA-4147-BDCF-E9AAF452A92B'}
 
 
 True - $.data.analog_gain.current 值为 128
@@ -825,7 +754,7 @@ True - $.data.white_balance_mode 值为 0
 True - $.data.white_balance_red 值为 128
 True - $.err_code 值为 0
 True - $.err_msg 值为 ok
-True - $.req_id 值为 54C3E1D5-855F-AB4F-8C9A-B481CB500583
+True - $.req_id 值为 32F5D913-2AAA-4147-BDCF-E9AAF452A92B
 
 
 
@@ -854,14 +783,14 @@ True - $.req_id 值为 54C3E1D5-855F-AB4F-8C9A-B481CB500583
 pt1_7: 
 用例编号: IPCWeb-API-testcase__008
 测试内容: 获取 智能LED 参数
-POST请求地址: http://128.128.144.65/jvt_v1/image/get_video_LED_param?requestTime=1676074913640
+POST请求地址: http://128.128.144.63/jvt_v1/image/get_video_LED_param?requestTime=1676074913640
 请求头: None
 请求体: 
-{"req_id":"54C3E1D5-855F-AB4F-8C9A-B481CB500583"}
+{"req_id":"32F5D913-2AAA-4147-BDCF-E9AAF452A92B"}
 响应内容: 
-{'data': {'auto_led': {'select_content': [{'id': 1, 'name': '手动'}], 'select_index': 1}, 'light_value': {'current': 100, 'range': [0, 100]}}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
+{'data': {'auto_led': {'select_content': [{'id': 1, 'name': '手动'}], 'select_index': 1}, 'light_value': {'current': 100, 'range': [0, 100]}}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '32F5D913-2AAA-4147-BDCF-E9AAF452A92B'}
 预期相应: 
-{'data': {'auto_led': {'select_content': [{'id': 1, 'name': '手动'}], 'select_index': 1}, 'light_value': {'current': 100, 'range': [0, 100]}}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
+{'data': {'auto_led': {'select_content': [{'id': 1, 'name': '手动'}], 'select_index': 1}, 'light_value': {'current': 100, 'range': [0, 100]}}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '32F5D913-2AAA-4147-BDCF-E9AAF452A92B'}
 
 
 True - $.data.auto_led.select_content[0].id 值为 1
@@ -872,7 +801,83 @@ True - $.data.light_value.range[0] 值为 0
 True - $.data.light_value.range[1] 值为 100
 True - $.err_code 值为 0
 True - $.err_msg 值为 ok
-True - $.req_id 值为 54C3E1D5-855F-AB4F-8C9A-B481CB500583
+True - $.req_id 值为 32F5D913-2AAA-4147-BDCF-E9AAF452A92B
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1_8' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_api_8</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1_8')" >
+        通过</a>
+
+    <div id='div_pt1_8' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1_8').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1_8: 
+用例编号: IPCWeb-API-testcase__009
+测试内容: 获取 有线网络 参数
+POST请求地址: http://128.128.144.63/jvt_v1/network/get_net_eth_info?requestTime=1676075294226
+请求头: None
+请求体: 
+{"req_id":"32F5D913-2AAA-4147-BDCF-E9AAF452A92B"}
+响应内容: 
+{'data': {'dhcp_enable': 0, 'dns1': '8.8.8.8', 'dns2': '114.114.114.114', 'gateway': '128.128.1.1', 'ip': '128.128.144.63', 'mac': '00:11:04:07:C0:C0', 'mask': '255.255.0.0', 'need_reboot': 1}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '32F5D913-2AAA-4147-BDCF-E9AAF452A92B'}
+预期相应: 
+{}
+
+
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1_9' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_api_9</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1_9')" >
+        通过</a>
+
+    <div id='div_pt1_9' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1_9').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1_9: 
+用例编号: IPCWeb-API-testcase__010
+测试内容: 获取 FTP 参数
+POST请求地址: http://128.128.144.63/jvt_v1/network/get_net_ftp_info?requestTime=1676075364087
+请求头: None
+请求体: 
+{"req_id":"32F5D913-2AAA-4147-BDCF-E9AAF452A92B"}
+响应内容: 
+{'data': {'enable': 0, 'ftp_ip': '192.168.1.1', 'ftp_port': 21, 'ftp_pwd': 'admin', 'ftp_root_path': 'Default_Folder', 'ftp_secondary_path': {'select_content': [{'id': 0, 'name': '无'}, {'id': 1, 'name': '按日期'}, {'id': 2, 'name': '按设备编号'}, {'id': 3, 'name': '按ip地址'}], 'select_index': 0}, 'ftp_username': 'admin'}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '32F5D913-2AAA-4147-BDCF-E9AAF452A92B'}
+预期相应: 
+{}
+
+
 
 
 
@@ -885,11 +890,11 @@ True - $.req_id 值为 54C3E1D5-855F-AB4F-8C9A-B481CB500583
 
 <tr id='total_row'>
     <td>总计</td>
-    <td>7</td>
+    <td>9</td>
     <td>6</td>
-    <td>1</td>
+    <td>3</td>
     <td>0</td>
-    <td>通过率：85.7%</td>
+    <td>通过率：66.7%</td>
     
 </tr>
 </table>
@@ -935,7 +940,7 @@ True - $.req_id 值为 54C3E1D5-855F-AB4F-8C9A-B481CB500583
                         center: ['50%', '60%'],
                         data:[
                             {value:6, name:'通过'},
-                            {value:1, name:'失败'},
+                            {value:3, name:'失败'},
                             {value:0, name:'错误'}
                         ],
                         itemStyle: {
