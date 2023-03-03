@@ -1,18 +1,28 @@
 import openpyxl
+import re
 
 class ReadExecl(object):
     
 
-    def __init__(self, filename, sheetname):
+    def __init__(self, filename):
         self.filename = filename
-        self.sheetname = sheetname
+        m = re.search(r'^(.*)\\([^\\]+).xlsx$',filename)
+        file_parent_dir = m.group(1)
+        name = m.group(2)
+        self.new_filename = file_parent_dir + "\\"+"(测试结果记录)--" + name +".xlsx"
 
-    def open(self):
-        self.wb = openpyxl.load_workbook(self.filename, data_only=True)
-        self.sh = self.wb[self.sheetname]
+    def open(self, sheetname, data_only_flag):
+        self.wb = openpyxl.load_workbook(self.filename, data_only=data_only_flag)
+        self.sh = self.wb[sheetname]
+        return self
+
+    def sheet(self, sheetname):
+        return self
+    
+    def close(self):
+        self.wb.save(self.new_filename)
 
     def read_data(self, start_number):
-        self.open()
         datas = list(self.sh.rows)
         title = [i.value for i in datas[0]]
 
@@ -27,7 +37,6 @@ class ReadExecl(object):
         return cases
 
     def read_variable_data(self, start_number, name_column_number, value_column_number):
-        self.open()
         datas = list(self.sh.rows)
         vars = {}
         # 读取变量数据到字典中
@@ -40,6 +49,5 @@ class ReadExecl(object):
 
 
     def write_data(self,row,column,value):
-        self.open()
         self.sh.cell(row=row,column=column,value=value)
-        self.wb.save(self.filename)
+        self.wb.save(self.new_filename)

@@ -311,9 +311,9 @@ a.popup_link:hover {
         </h1>
         <div style="float:left;width:50%;">
             <p class='parameters'> <p class='attribute'><strong>测试人员:</strong> llf</p>
-<p class='attribute'><strong>开始时间:</strong> 2023-03-03 00:37:39</p>
-<p class='attribute'><strong>运行时长:</strong> 0:00:33.009889</p>
-<p class='attribute'><strong>测试结果:</strong> 共 15  通过 13 失败 2  通过率:86.7%</p>
+<p class='attribute'><strong>开始时间:</strong> 2023-03-03 16:33:16</p>
+<p class='attribute'><strong>运行时长:</strong> 0:00:02.887430</p>
+<p class='attribute'><strong>测试结果:</strong> 共 7  通过 6 失败 1  通过率:85.7%</p>
 </p>
             <br>
             <br>
@@ -351,16 +351,16 @@ a.popup_link:hover {
 </tr>
 
 <tr class='failClass'>
-    <td>test_magic_mirror.MagicMirrorTestCase</td>
-    <td>15</td>
-    <td>13</td>
-    <td>2</td>
+    <td>test_ipc_web_api.IPCWebTestCase</td>
+    <td>7</td>
+    <td>6</td>
+    <td>1</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1',15)">详情</a></td>
+    <td><a href="javascript:showClassDetail('c1',7)">详情</a></td>
 </tr>
 
 <tr id='pt1_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_api_01</div></td>
+    <td class='passCase'><div class='testcase'>test_api_1</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -375,27 +375,36 @@ a.popup_link:hover {
         <pre>
         
 pt1_1: 
-用例编号: MagicMirror-API-testcase__001
-测试内容: 移动侦测配置获取
-GET请求地址: http://localhost:8081/monitor/terminal/southInfo/getMDStatus
-请求头: {}
+用例编号: IPCWeb-API-testcase__002
+测试内容: 获取 音频配置 参数
+POST请求地址: http://128.128.144.65/jvt_v1/audio_info/get_audio_param?requestTime=1676073963335
+请求头: None
 请求体: 
-{"deviceCode":"30211009066218A6B00","token":"--------------------&gt; token"}
+{"action":"get_audio_param","req_id":"54C3E1D5-855F-AB4F-8C9A-B481CB500583"}
 响应内容: 
-{'code': 200, 'message': 'success', 'data': {'smartStatus': -1, 'defenceStatus': 1, 'defenceTime': None, 'eventStatus': 1, 'sensitivity': 70, 'screenShotStatus': 2, 'smartType': None}}
+{'data': {'audio_enable': 1, 'audio_input_enable': 1, 'audio_input_format': {'select_content': [{'id': 0, 'name': 'G711U'}, {'id': 1, 'name': 'G711A'}], 'select_index': 1}, 'in_volume': {'current': 100, 'range': [0, 100]}, 'out_volume': {'current': 12, 'range': [0, 100]}, 'silence_upgrade_enable': 0}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
 预期相应: 
-{'code': 200, 'message': 'success', 'data': {'smartStatus': -1, 'defenceStatus': 1, 'defenceTime': None, 'eventStatus': 1, 'sensitivity': 70, 'screenShotStatus': 2, 'smartType': None}}
+{'data': {'audio_enable': 1, 'audio_input_enable': 1, 'audio_input_format': {'select_content': [{'id': 0, 'name': 'G711U'}, {'id': 1, 'name': 'G711A'}], 'select_index': 1}, 'in_volume': {'current': 100, 'range': [0, 100]}, 'out_volume': {'current': 12, 'range': [0, 100]}, 'silence_upgrade_enable': 0}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
 
 
-True - $.code 值为 200
-True - $.message 值为 success
-True - $.data.smartStatus 值为 -1
-True - $.data.defenceStatus 值为 1
-True - $.data.defenceTime 值为 None
-True - $.data.eventStatus 值为 1
-True - $.data.sensitivity 值为 70
-True - $.data.screenShotStatus 值为 2
-True - $.data.smartType 值为 None
+True - $.data.audio_enable 值为 1
+True - $.data.audio_input_enable 值为 1
+True - $.data.audio_input_format.select_content[0].id 值为 0
+True - $.data.audio_input_format.select_content[0].name 值为 G711U
+True - $.data.audio_input_format.select_content[1].id 值为 1
+True - $.data.audio_input_format.select_content[1].name 值为 G711A
+True - $.data.audio_input_format.select_index 值为 1
+True - $.data.in_volume.current 值为 100
+True - $.data.in_volume.range[0] 值为 0
+True - $.data.in_volume.range[1] 值为 100
+True - $.data.out_volume.current 值为 12
+True - $.data.out_volume.range[0] 值为 0
+True - $.data.out_volume.range[1] 值为 100
+True - $.data.silence_upgrade_enable 值为 0
+True - $.err_code 值为 0
+True - $.err_msg 值为 ok
+True - $.req_id 值为 54C3E1D5-855F-AB4F-8C9A-B481CB500583
+
 
 
         </pre>
@@ -406,7 +415,7 @@ True - $.data.smartType 值为 None
 </tr>
 
 <tr id='pt1_2' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_api_02</div></td>
+    <td class='passCase'><div class='testcase'>test_api_2</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -421,43 +430,88 @@ True - $.data.smartType 值为 None
         <pre>
         
 pt1_2: 
-用例编号: MagicMirror-API-testcase__002
-测试内容: 获取告警配置
-GET请求地址: http://localhost:8081/monitor/terminal/southInfo/getEventAlarmOut
-请求头: {}
+用例编号: IPCWeb-API-testcase__003
+测试内容: 获取 字符叠加 参数
+POST请求地址: http://128.128.144.65/jvt_v1/video/get_osd_info?requestTime=1676074771994
+请求头: None
 请求体: 
-{"deviceCode":"30211009066218A6B00","eventType":1,"token":"--------------------&gt; token"}
+{"req_id":"54C3E1D5-855F-AB4F-8C9A-B481CB500583"}
 响应内容: 
-{'code': 200, 'message': 'success', 'data': {'lightAlarmType': 2, 'audioAlarmFiles': [{'name': '警报音', 'index': 1, 'type': 1, 'status': 1}, {'name': '请注意，您已进入监控区域', 'index': 2, 'type': 1, 'status': 0}, {'name': '危险区域，请勿靠近', 'index': 3, 'type': 1, 'status': 0}, {'name': '您好，欢迎光临', 'index': 4, 'type': 1, 'status': 0}], 'audioAlarmStatus': 2, 'lightAlarmStatus': 2, 'audioPlayCount': 1, 'lightAlarmFrequency': 2, 'lightAlarmTime': 5, 'gbAlarmStatus': 1}}
+{'data': {'osd_date_enable': 1, 'osd_date_format': {'select_content': [{'id': 0, 'name': 'YYYY-MM-DD'}, {'id': 1, 'name': 'MM-DD-YYYY'}, {'id': 2, 'name': 'DD-MM-YYYY'}], 'select_index': 0}, 'osd_main_size': {'select_content': [{'id': 0, 'name': '小'}, {'id': 1, 'name': '中'}, {'id': 2, 'name': '大'}, {'id': 3, 'name': '自适应'}], 'select_index': 3}, 'osd_maxlen': 32, 'osd_sub_size': {'select_content': [{'id': 0, 'name': '小'}, {'id': 1, 'name': '中'}, {'id': 2, 'name': '大'}, {'id': 3, 'name': '自适应'}], 'select_index': 3}, 'osd_text': [{'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 3, 'osd_text_y': 96}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 98, 'osd_text_y': 97}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 81}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 84}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 87}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 90}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 93}], 'osd_time_enable': 1, 'osd_time_x': 97, 'osd_time_y': 9, 'osd_week_enable': 1}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
 预期相应: 
-{'code': 200, 'message': 'success', 'data': {'lightAlarmType': 2, 'audioAlarmFiles': [{'name': '警报音', 'index': 1, 'type': 1, 'status': 1}, {'name': '请注意，您已进入监控区域', 'index': 2, 'type': 1, 'status': 0}, {'name': '危险区域，请勿靠近', 'index': 3, 'type': 1, 'status': 0}, {'name': '您好，欢迎光临', 'index': 4, 'type': 1, 'status': 0}], 'audioAlarmStatus': 2, 'lightAlarmStatus': 2, 'audioPlayCount': 1, 'lightAlarmFrequency': 2, 'lightAlarmTime': 5, 'gbAlarmStatus': 1}}
+{'data': {'osd_date_enable': 1, 'osd_date_format': {'select_content': [{'id': 0, 'name': 'YYYY-MM-DD'}, {'id': 1, 'name': 'MM-DD-YYYY'}, {'id': 2, 'name': 'DD-MM-YYYY'}], 'select_index': 0}, 'osd_main_size': {'select_content': [{'id': 0, 'name': '小'}, {'id': 1, 'name': '中'}, {'id': 2, 'name': '大'}, {'id': 3, 'name': '自适应'}], 'select_index': 3}, 'osd_maxlen': 32, 'osd_sub_size': {'select_content': [{'id': 0, 'name': '小'}, {'id': 1, 'name': '中'}, {'id': 2, 'name': '大'}, {'id': 3, 'name': '自适应'}], 'select_index': 3}, 'osd_text': [{'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 3, 'osd_text_y': 96}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 98, 'osd_text_y': 97}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 81}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 84}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 87}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 90}, {'osd_text_content': '', 'osd_text_enable': 0, 'osd_text_removable': 0, 'osd_text_x': 87, 'osd_text_y': 93}], 'osd_time_enable': 1, 'osd_time_x': 97, 'osd_time_y': 9, 'osd_week_enable': 1}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
 
 
-True - $.code 值为 200
-True - $.message 值为 success
-True - $.data.lightAlarmType 值为 2
-True - $.data.audioAlarmFiles[0].name 值为 警报音
-True - $.data.audioAlarmFiles[0].index 值为 1
-True - $.data.audioAlarmFiles[0].type 值为 1
-True - $.data.audioAlarmFiles[0].status 值为 1
-True - $.data.audioAlarmFiles[1].name 值为 请注意，您已进入监控区域
-True - $.data.audioAlarmFiles[1].index 值为 2
-True - $.data.audioAlarmFiles[1].type 值为 1
-True - $.data.audioAlarmFiles[1].status 值为 0
-True - $.data.audioAlarmFiles[2].name 值为 危险区域，请勿靠近
-True - $.data.audioAlarmFiles[2].index 值为 3
-True - $.data.audioAlarmFiles[2].type 值为 1
-True - $.data.audioAlarmFiles[2].status 值为 0
-True - $.data.audioAlarmFiles[3].name 值为 您好，欢迎光临
-True - $.data.audioAlarmFiles[3].index 值为 4
-True - $.data.audioAlarmFiles[3].type 值为 1
-True - $.data.audioAlarmFiles[3].status 值为 0
-True - $.data.audioAlarmStatus 值为 2
-True - $.data.lightAlarmStatus 值为 2
-True - $.data.audioPlayCount 值为 1
-True - $.data.lightAlarmFrequency 值为 2
-True - $.data.lightAlarmTime 值为 5
-True - $.data.gbAlarmStatus 值为 1
+True - $.data.osd_date_enable 值为 1
+True - $.data.osd_date_format.select_content[0].id 值为 0
+True - $.data.osd_date_format.select_content[0].name 值为 YYYY-MM-DD
+True - $.data.osd_date_format.select_content[1].id 值为 1
+True - $.data.osd_date_format.select_content[1].name 值为 MM-DD-YYYY
+True - $.data.osd_date_format.select_content[2].id 值为 2
+True - $.data.osd_date_format.select_content[2].name 值为 DD-MM-YYYY
+True - $.data.osd_date_format.select_index 值为 0
+True - $.data.osd_main_size.select_content[0].id 值为 0
+True - $.data.osd_main_size.select_content[0].name 值为 小
+True - $.data.osd_main_size.select_content[1].id 值为 1
+True - $.data.osd_main_size.select_content[1].name 值为 中
+True - $.data.osd_main_size.select_content[2].id 值为 2
+True - $.data.osd_main_size.select_content[2].name 值为 大
+True - $.data.osd_main_size.select_content[3].id 值为 3
+True - $.data.osd_main_size.select_content[3].name 值为 自适应
+True - $.data.osd_main_size.select_index 值为 3
+True - $.data.osd_maxlen 值为 32
+True - $.data.osd_sub_size.select_content[0].id 值为 0
+True - $.data.osd_sub_size.select_content[0].name 值为 小
+True - $.data.osd_sub_size.select_content[1].id 值为 1
+True - $.data.osd_sub_size.select_content[1].name 值为 中
+True - $.data.osd_sub_size.select_content[2].id 值为 2
+True - $.data.osd_sub_size.select_content[2].name 值为 大
+True - $.data.osd_sub_size.select_content[3].id 值为 3
+True - $.data.osd_sub_size.select_content[3].name 值为 自适应
+True - $.data.osd_sub_size.select_index 值为 3
+True - $.data.osd_text[0].osd_text_content 值为 
+True - $.data.osd_text[0].osd_text_enable 值为 0
+True - $.data.osd_text[0].osd_text_removable 值为 0
+True - $.data.osd_text[0].osd_text_x 值为 3
+True - $.data.osd_text[0].osd_text_y 值为 96
+True - $.data.osd_text[1].osd_text_content 值为 
+True - $.data.osd_text[1].osd_text_enable 值为 0
+True - $.data.osd_text[1].osd_text_removable 值为 0
+True - $.data.osd_text[1].osd_text_x 值为 98
+True - $.data.osd_text[1].osd_text_y 值为 97
+True - $.data.osd_text[2].osd_text_content 值为 
+True - $.data.osd_text[2].osd_text_enable 值为 0
+True - $.data.osd_text[2].osd_text_removable 值为 0
+True - $.data.osd_text[2].osd_text_x 值为 87
+True - $.data.osd_text[2].osd_text_y 值为 81
+True - $.data.osd_text[3].osd_text_content 值为 
+True - $.data.osd_text[3].osd_text_enable 值为 0
+True - $.data.osd_text[3].osd_text_removable 值为 0
+True - $.data.osd_text[3].osd_text_x 值为 87
+True - $.data.osd_text[3].osd_text_y 值为 84
+True - $.data.osd_text[4].osd_text_content 值为 
+True - $.data.osd_text[4].osd_text_enable 值为 0
+True - $.data.osd_text[4].osd_text_removable 值为 0
+True - $.data.osd_text[4].osd_text_x 值为 87
+True - $.data.osd_text[4].osd_text_y 值为 87
+True - $.data.osd_text[5].osd_text_content 值为 
+True - $.data.osd_text[5].osd_text_enable 值为 0
+True - $.data.osd_text[5].osd_text_removable 值为 0
+True - $.data.osd_text[5].osd_text_x 值为 87
+True - $.data.osd_text[5].osd_text_y 值为 90
+True - $.data.osd_text[6].osd_text_content 值为 
+True - $.data.osd_text[6].osd_text_enable 值为 0
+True - $.data.osd_text[6].osd_text_removable 值为 0
+True - $.data.osd_text[6].osd_text_x 值为 87
+True - $.data.osd_text[6].osd_text_y 值为 93
+True - $.data.osd_time_enable 值为 1
+True - $.data.osd_time_x 值为 97
+True - $.data.osd_time_y 值为 9
+True - $.data.osd_week_enable 值为 1
+True - $.err_code 值为 0
+True - $.err_msg 值为 ok
+True - $.req_id 值为 54C3E1D5-855F-AB4F-8C9A-B481CB500583
+
 
 
         </pre>
@@ -468,7 +522,7 @@ True - $.data.gbAlarmStatus 值为 1
 </tr>
 
 <tr id='pt1_3' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_api_03</div></td>
+    <td class='passCase'><div class='testcase'>test_api_3</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -483,34 +537,92 @@ True - $.data.gbAlarmStatus 值为 1
         <pre>
         
 pt1_3: 
-用例编号: MagicMirror-API-testcase__003
-测试内容: 获取区域入侵配置
-GET请求地址: http://localhost:8081/monitor/terminal/southInfo/getAreaAlarmStatus
-请求头: {}
+用例编号: IPCWeb-API-testcase__004
+测试内容: 获取 视频编码 参数
+POST请求地址: http://128.128.144.65/jvt_v1/video/get_video_param?requestTime=1676074870200
+请求头: None
 请求体: 
-{"deviceCode":"30211009066218A6B00","token":"--------------------&gt; token"}
+{"test":"11","req_id":"54C3E1D5-855F-AB4F-8C9A-B481CB500583"}
 响应内容: 
-{'code': 200, 'message': 'success', 'data': {'smartStatus': 1, 'defenceStatus': 1, 'defenceTime': None, 'eventStatus': 1, 'action': [1], 'sensitivity': 70, 'screenShotStatus': 2, 'smartType': [1], 'areaGroup': [{'resolution': '1920*1080', 'points': ['0,0', '0,1080', '1920,1080', '1920,0']}], 'showArea': 2}}
+{'data': {'main_advanced_enable': 1, 'main_code_bitrate': {'current': 2048, 'range': [64, 8192]}, 'main_code_rate_control': {'select_content': [{'id': 0, 'name': '定码率'}, {'id': 1, 'name': '变码率'}], 'select_index': 1}, 'main_encode_type': {'select_content': [{'id': 2, 'name': 'H.264'}, {'id': 3, 'name': 'H.265'}], 'select_index': 3}, 'main_frame_rate': {'current': 15, 'range': [1, 25]}, 'main_iframe_interval': {'current': 30, 'range': [15, 75]}, 'main_quality': {'select_content': [{'id': 0, 'name': '高'}, {'id': 1, 'name': '中'}, {'id': 2, 'name': '低'}], 'select_index': 0}, 'main_resolution': {'select_content': [{'id': 0, 'name': '2560x1440'}, {'id': 1, 'name': '1920x1080'}, {'id': 2, 'name': '1280x960'}, {'id': 3, 'name': '1280x720'}], 'select_index': 0}, 'need_reboot': 1, 'sub_code_bitrate': {'current': 768, 'range': [64, 2048]}, 'sub_code_rate_control': {'select_content': [{'id': 0, 'name': '定码率'}, {'id': 1, 'name': '变码率'}], 'select_index': 1}, 'sub_encode_type': {'select_content': [{'id': 2, 'name': 'H.264'}, {'id': 3, 'name': 'H.265'}], 'select_index': 3}, 'sub_frame_rate': {'current': 15, 'range': [1, 25]}, 'sub_iframe_interval': {'current': 30, 'range': [15, 75]}, 'sub_quality': {'select_content': [{'id': 0, 'name': '高'}, {'id': 1, 'name': '中'}, {'id': 2, 'name': '低'}], 'select_index': 0}, 'sub_resolution': {'select_content': [{'id': 0, 'name': '1280x720'}, {'id': 1, 'name': '704x576'}, {'id': 2, 'name': '640x480'}], 'select_index': 1}}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
 预期相应: 
-{'code': 200, 'message': 'success', 'data': {'smartStatus': 1, 'defenceStatus': 1, 'defenceTime': None, 'eventStatus': 1, 'action': [1], 'sensitivity': 70, 'screenShotStatus': 2, 'smartType': [1], 'areaGroup': [{'resolution': '1920*1080', 'points': ['0,0', '0,1080', '1920,1080', '1920,0']}], 'showArea': 2}}
+{'data': {'main_advanced_enable': 1, 'main_code_bitrate': {'current': 2048, 'range': [64, 8192]}, 'main_code_rate_control': {'select_content': [{'id': 0, 'name': '定码率'}, {'id': 1, 'name': '变码率'}], 'select_index': 1}, 'main_encode_type': {'select_content': [{'id': 2, 'name': 'H.264'}, {'id': 3, 'name': 'H.265'}], 'select_index': 3}, 'main_frame_rate': {'current': 15, 'range': [1, 25]}, 'main_iframe_interval': {'current': 30, 'range': [15, 75]}, 'main_quality': {'select_content': [{'id': 0, 'name': '高'}, {'id': 1, 'name': '中'}, {'id': 2, 'name': '低'}], 'select_index': 0}, 'main_resolution': {'select_content': [{'id': 0, 'name': '2560x1440'}, {'id': 1, 'name': '1920x1080'}, {'id': 2, 'name': '1280x960'}, {'id': 3, 'name': '1280x720'}], 'select_index': 0}, 'need_reboot': 1, 'sub_code_bitrate': {'current': 768, 'range': [64, 2048]}, 'sub_code_rate_control': {'select_content': [{'id': 0, 'name': '定码率'}, {'id': 1, 'name': '变码率'}], 'select_index': 1}, 'sub_encode_type': {'select_content': [{'id': 2, 'name': 'H.264'}, {'id': 3, 'name': 'H.265'}], 'select_index': 3}, 'sub_frame_rate': {'current': 15, 'range': [1, 25]}, 'sub_iframe_interval': {'current': 30, 'range': [15, 75]}, 'sub_quality': {'select_content': [{'id': 0, 'name': '高'}, {'id': 1, 'name': '中'}, {'id': 2, 'name': '低'}], 'select_index': 0}, 'sub_resolution': {'select_content': [{'id': 0, 'name': '1280x720'}, {'id': 1, 'name': '704x576'}, {'id': 2, 'name': '640x480'}], 'select_index': 1}}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
 
 
-True - $.code 值为 200
-True - $.message 值为 success
-True - $.data.smartStatus 值为 1
-True - $.data.defenceStatus 值为 1
-True - $.data.defenceTime 值为 None
-True - $.data.eventStatus 值为 1
-True - $.data.action[0] 值为 1
-True - $.data.sensitivity 值为 70
-True - $.data.screenShotStatus 值为 2
-True - $.data.smartType[0] 值为 1
-True - $.data.areaGroup[0].resolution 值为 1920*1080
-True - $.data.areaGroup[0].points[0] 值为 0,0
-True - $.data.areaGroup[0].points[1] 值为 0,1080
-True - $.data.areaGroup[0].points[2] 值为 1920,1080
-True - $.data.areaGroup[0].points[3] 值为 1920,0
-True - $.data.showArea 值为 2
+True - $.data.main_advanced_enable 值为 1
+True - $.data.main_code_bitrate.current 值为 2048
+True - $.data.main_code_bitrate.range[0] 值为 64
+True - $.data.main_code_bitrate.range[1] 值为 8192
+True - $.data.main_code_rate_control.select_content[0].id 值为 0
+True - $.data.main_code_rate_control.select_content[0].name 值为 定码率
+True - $.data.main_code_rate_control.select_content[1].id 值为 1
+True - $.data.main_code_rate_control.select_content[1].name 值为 变码率
+True - $.data.main_code_rate_control.select_index 值为 1
+True - $.data.main_encode_type.select_content[0].id 值为 2
+True - $.data.main_encode_type.select_content[0].name 值为 H.264
+True - $.data.main_encode_type.select_content[1].id 值为 3
+True - $.data.main_encode_type.select_content[1].name 值为 H.265
+True - $.data.main_encode_type.select_index 值为 3
+True - $.data.main_frame_rate.current 值为 15
+True - $.data.main_frame_rate.range[0] 值为 1
+True - $.data.main_frame_rate.range[1] 值为 25
+True - $.data.main_iframe_interval.current 值为 30
+True - $.data.main_iframe_interval.range[0] 值为 15
+True - $.data.main_iframe_interval.range[1] 值为 75
+True - $.data.main_quality.select_content[0].id 值为 0
+True - $.data.main_quality.select_content[0].name 值为 高
+True - $.data.main_quality.select_content[1].id 值为 1
+True - $.data.main_quality.select_content[1].name 值为 中
+True - $.data.main_quality.select_content[2].id 值为 2
+True - $.data.main_quality.select_content[2].name 值为 低
+True - $.data.main_quality.select_index 值为 0
+True - $.data.main_resolution.select_content[0].id 值为 0
+True - $.data.main_resolution.select_content[0].name 值为 2560x1440
+True - $.data.main_resolution.select_content[1].id 值为 1
+True - $.data.main_resolution.select_content[1].name 值为 1920x1080
+True - $.data.main_resolution.select_content[2].id 值为 2
+True - $.data.main_resolution.select_content[2].name 值为 1280x960
+True - $.data.main_resolution.select_content[3].id 值为 3
+True - $.data.main_resolution.select_content[3].name 值为 1280x720
+True - $.data.main_resolution.select_index 值为 0
+True - $.data.need_reboot 值为 1
+True - $.data.sub_code_bitrate.current 值为 768
+True - $.data.sub_code_bitrate.range[0] 值为 64
+True - $.data.sub_code_bitrate.range[1] 值为 2048
+True - $.data.sub_code_rate_control.select_content[0].id 值为 0
+True - $.data.sub_code_rate_control.select_content[0].name 值为 定码率
+True - $.data.sub_code_rate_control.select_content[1].id 值为 1
+True - $.data.sub_code_rate_control.select_content[1].name 值为 变码率
+True - $.data.sub_code_rate_control.select_index 值为 1
+True - $.data.sub_encode_type.select_content[0].id 值为 2
+True - $.data.sub_encode_type.select_content[0].name 值为 H.264
+True - $.data.sub_encode_type.select_content[1].id 值为 3
+True - $.data.sub_encode_type.select_content[1].name 值为 H.265
+True - $.data.sub_encode_type.select_index 值为 3
+True - $.data.sub_frame_rate.current 值为 15
+True - $.data.sub_frame_rate.range[0] 值为 1
+True - $.data.sub_frame_rate.range[1] 值为 25
+True - $.data.sub_iframe_interval.current 值为 30
+True - $.data.sub_iframe_interval.range[0] 值为 15
+True - $.data.sub_iframe_interval.range[1] 值为 75
+True - $.data.sub_quality.select_content[0].id 值为 0
+True - $.data.sub_quality.select_content[0].name 值为 高
+True - $.data.sub_quality.select_content[1].id 值为 1
+True - $.data.sub_quality.select_content[1].name 值为 中
+True - $.data.sub_quality.select_content[2].id 值为 2
+True - $.data.sub_quality.select_content[2].name 值为 低
+True - $.data.sub_quality.select_index 值为 0
+True - $.data.sub_resolution.select_content[0].id 值为 0
+True - $.data.sub_resolution.select_content[0].name 值为 1280x720
+True - $.data.sub_resolution.select_content[1].id 值为 1
+True - $.data.sub_resolution.select_content[1].name 值为 704x576
+True - $.data.sub_resolution.select_content[2].id 值为 2
+True - $.data.sub_resolution.select_content[2].name 值为 640x480
+True - $.data.sub_resolution.select_index 值为 1
+True - $.err_code 值为 0
+True - $.err_msg 值为 ok
+True - $.req_id 值为 54C3E1D5-855F-AB4F-8C9A-B481CB500583
+
 
 
         </pre>
@@ -521,7 +633,7 @@ True - $.data.showArea 值为 2
 </tr>
 
 <tr id='pt1_4' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_api_04</div></td>
+    <td class='passCase'><div class='testcase'>test_api_4</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -536,30 +648,26 @@ True - $.data.showArea 值为 2
         <pre>
         
 pt1_4: 
-用例编号: MagicMirror-API-testcase__004
-测试内容: 获取图像配置
-GET请求地址: http://localhost:8081/monitor/terminal/southInfo/getImageConfig
-请求头: {}
+用例编号: IPCWeb-API-testcase__005
+测试内容: 获取 亮色调节 参数
+POST请求地址: http://128.128.144.65/jvt_v1/video/get_image_param?requestTime=1676074913640
+请求头: None
 请求体: 
-{"deviceCode":"30211009066218A6B00","token":"--------------------&gt; token"}
+{"req_id":"54C3E1D5-855F-AB4F-8C9A-B481CB500583"}
 响应内容: 
-{'code': 200, 'message': 'success', 'data': {'types': [{'type': 'DAY', 'params': [{'current': 50, 'name': 'BRIGHTNESS'}, {'current': 50, 'name': 'CONTRAST'}, {'current': 50, 'name': 'SATURATION'}, {'current': 50, 'name': 'SHARPNESS'}]}], 'model': 1}}
+{'data': {'brightness': 128, 'constract': 128, 'saturation': 128, 'sharpness': 128}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
 预期相应: 
-{'code': 200, 'message': 'success', 'data': {'types': [{'type': 'DAY', 'params': [{'current': 50, 'name': 'BRIGHTNESS'}, {'current': 50, 'name': 'CONTRAST'}, {'current': 50, 'name': 'SATURATION'}, {'current': 50, 'name': 'SHARPNESS'}]}], 'model': 1}}
+{'data': {'brightness': 128, 'constract': 128, 'saturation': 128, 'sharpness': 128}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
 
 
-True - $.code 值为 200
-True - $.message 值为 success
-True - $.data.types[0].type 值为 DAY
-True - $.data.types[0].params[0].current 值为 50
-True - $.data.types[0].params[0].name 值为 BRIGHTNESS
-True - $.data.types[0].params[1].current 值为 50
-True - $.data.types[0].params[1].name 值为 CONTRAST
-True - $.data.types[0].params[2].current 值为 50
-True - $.data.types[0].params[2].name 值为 SATURATION
-True - $.data.types[0].params[3].current 值为 50
-True - $.data.types[0].params[3].name 值为 SHARPNESS
-True - $.data.model 值为 1
+True - $.data.brightness 值为 128
+True - $.data.constract 值为 128
+True - $.data.saturation 值为 128
+True - $.data.sharpness 值为 128
+True - $.err_code 值为 0
+True - $.err_msg 值为 ok
+True - $.req_id 值为 54C3E1D5-855F-AB4F-8C9A-B481CB500583
+
 
 
         </pre>
@@ -570,7 +678,7 @@ True - $.data.model 值为 1
 </tr>
 
 <tr id='ft1_5' class='none'>
-    <td class='failCase'><div class='testcase'>test_api_05</div></td>
+    <td class='failCase'><div class='testcase'>test_api_5</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -585,32 +693,52 @@ True - $.data.model 值为 1
         <pre>
         
 ft1_5: 
-用例编号: MagicMirror-API-testcase__005
-测试内容: 获取事件告警
-GET请求地址: http://localhost:8081/monitor/terminal/southInfo/getEventAlarmOut
-请求头: {}
+用例编号: IPCWeb-API-testcase__006
+测试内容: 获取 基本设置 参数
+POST请求地址: http://128.128.144.65/jvt_v1/video/get_video_base_param?requestTime=1676074913640
+请求头: None
 请求体: 
-{"deviceCode":"30211009066218A6B00","eventType":2,"token":"--------------------&gt; token"}
+{"req_id":"54C3E1D5-855F-AB4F-8C9A-B481CB500583"}
 响应内容: 
-{'code': 200, 'message': 'success', 'data': {'lightAlarmType': 2, 'audioAlarmFiles': [{'name': '警报音', 'index': 1, 'type': 1, 'status': 1}, {'name': '请注意，您已进入监控区域', 'index': 2, 'type': 1, 'status': 0}, {'name': '危险区域，请勿靠近', 'index': 3, 'type': 1, 'status': 0}, {'name': '您好，欢迎光临', 'index': 4, 'type': 1, 'status': 0}], 'audioAlarmStatus': 2, 'lightAlarmStatus': 2, 'audioPlayCount': 1, 'lightAlarmFrequency': 2, 'lightAlarmTime': 5, 'gbAlarmStatus': 1}}
+{'data': {'dark_time_hour': 18, 'dark_time_minute': 0, 'dawn_time_hour': 6, 'dawn_time_minute': 30, 'dnr_3d': {'current': 150, 'range': [0, 255]}, 'flip': 0, 'ircut_mode': {'select_content': [{'id': 0, 'name': '自动'}, {'id': 1, 'name': '彩色'}, {'id': 2, 'name': '黑白'}, {'id': 3, 'name': '时间控制'}], 'select_index': 2}, 'mirror': 0, 'rotate_angle': {'select_content': [{'id': 0, 'name': '0'}, {'id': 1, 'name': '90'}, {'id': 2, 'name': '180'}, {'id': 3, 'name': '270'}], 'select_index': 0}, 'video_format': {'select_content': [{'id': 0, 'name': 'NTSC(60HZ)'}, {'id': 1, 'name': 'PAL(50HZ)'}], 'select_index': 1}}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
 预期相应: 
-{'code': 200, 'message': 'success', 'data': {'lightAlarmType': 2, 'audioAlarmFiles': [{'name': '警报音', 'index': 1, 'type': 1, 'status': 0}, {'name': '请注意，您已进入监控区域', 'index': 2, 'type': 1, 'status': 0}, {'name': '危险区域，请勿靠近', 'index': 3, 'type': 1, 'status': 1}, {'name': '您好，欢迎光临', 'index': 4, 'type': 1, 'status': 0}], 'audioAlarmStatus': 2, 'lightAlarmStatus': 2, 'audioPlayCount': 1, 'lightAlarmFrequency': 2, 'lightAlarmTime': 5, 'gbAlarmStatus': 1}}
+{'data': {'dark_time_hour': 18, 'dark_time_minute': 0, 'dawn_time_hour': 6, 'dawn_time_minute': 30, 'dnr_3d': {'current': 150, 'range': [0, 255]}, 'flip': 0, 'ircut_mode': {'select_content': [{'id': 0, 'name': '自动'}, {'id': 1, 'name': '彩色'}, {'id': 2, 'name': '黑白'}, {'id': 3, 'name': '时间控制'}], 'select_index': 2}, 'mirror': 0, 'rotate_angle': {'select_content': [{'id': 0, 'name': '0'}, {'id': 1, 'name': '90'}, {'id': 2, 'name': '180'}, {'id': 2, 'name': '270'}], 'select_index': 0}, 'video_format': {'select_content': [{'id': 0, 'name': 'NTSC(60HZ)'}, {'id': 1, 'name': 'PAL(50HZ)'}], 'select_index': 1}}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
 
 
-True - $.code 值为 200
-True - $.message 值为 success
-True - $.data.lightAlarmType 值为 2
-True - $.data.audioAlarmFiles[0].name 值为 警报音
-True - $.data.audioAlarmFiles[0].index 值为 1
-True - $.data.audioAlarmFiles[0].type 值为 1
-False - $.data.audioAlarmFiles[0].status 值为 0
+True - $.data.dark_time_hour 值为 18
+True - $.data.dark_time_minute 值为 0
+True - $.data.dawn_time_hour 值为 6
+True - $.data.dawn_time_minute 值为 30
+True - $.data.dnr_3d.current 值为 150
+True - $.data.dnr_3d.range[0] 值为 0
+True - $.data.dnr_3d.range[1] 值为 255
+True - $.data.flip 值为 0
+True - $.data.ircut_mode.select_content[0].id 值为 0
+True - $.data.ircut_mode.select_content[0].name 值为 自动
+True - $.data.ircut_mode.select_content[1].id 值为 1
+True - $.data.ircut_mode.select_content[1].name 值为 彩色
+True - $.data.ircut_mode.select_content[2].id 值为 2
+True - $.data.ircut_mode.select_content[2].name 值为 黑白
+True - $.data.ircut_mode.select_content[3].id 值为 3
+True - $.data.ircut_mode.select_content[3].name 值为 时间控制
+True - $.data.ircut_mode.select_index 值为 2
+True - $.data.mirror 值为 0
+True - $.data.rotate_angle.select_content[0].id 值为 0
+True - $.data.rotate_angle.select_content[0].name 值为 0
+True - $.data.rotate_angle.select_content[1].id 值为 1
+True - $.data.rotate_angle.select_content[1].name 值为 90
+True - $.data.rotate_angle.select_content[2].id 值为 2
+True - $.data.rotate_angle.select_content[2].name 值为 180
+--------------------&gt; False - $.data.rotate_angle.select_content[3].id 值为 2 &lt;--------------------
 Traceback (most recent call last):
-  File "C:\Users\11\AppData\Local\Programs\Python\Python311\Lib\site-packages\ddt.py", line 220, in wrapper
+  File "F:\Python\Python311\Lib\site-packages\ddt.py", line 220, in wrapper
     return func(self, *args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "d:\Windows数据移动到此文件夹\Documents\GitHub\LEARN__HTTP-Interface-Automate-Test\task1\testcase\test_magic_mirror.py", line 73, in test_api
-    self.assertTrue(assert_two_json_equal(expect_json, resp.json(), "$"))
-AssertionError: False is not true
+  File "c:\Users\岑小林\Documents\GitHub\LEARN__HTTP-Interface-Automate-Test\task1\testcase\test_ipc_web_api.py", line 90, in test_api
+    raise e
+  File "c:\Users\岑小林\Documents\GitHub\LEARN__HTTP-Interface-Automate-Test\task1\testcase\test_ipc_web_api.py", line 86, in test_api
+    self.assertTrue(assert_two_json_equal(expect_json, resp.json(), "$"), "和预期的JSON值不同")
+AssertionError: False is not true : 和预期的JSON值不同
 
 
         </pre>
@@ -621,7 +749,7 @@ AssertionError: False is not true
 </tr>
 
 <tr id='pt1_6' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_api_06</div></td>
+    <td class='passCase'><div class='testcase'>test_api_6</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -636,25 +764,69 @@ AssertionError: False is not true
         <pre>
         
 pt1_6: 
-用例编号: MagicMirror-API-testcase__006
-测试内容: 获取夜视配置
-GET请求地址: http://localhost:8081/monitor/terminal/southInfo/getNightVisionConfig
-请求头: {'token': '--------------------&gt; token'}
+用例编号: IPCWeb-API-testcase__007
+测试内容: 获取 高级设置 参数
+POST请求地址: http://128.128.144.65/jvt_v1/image/get_video_advance_param?requestTime=1676074913640
+请求头: None
 请求体: 
-{"deviceCode":"30211009066218A6B00","token":"--------------------&gt; token"}
+{"req_id":"54C3E1D5-855F-AB4F-8C9A-B481CB500583"}
 响应内容: 
-{'code': 200, 'message': 'success', 'data': {'supportedLightTypes': [2, 1, 3], 'currentLightType': 1, 'lightnessType': 100}}
+{'data': {'analog_gain': {'current': 128, 'range': [1, 255]}, 'expose_mode': {'select_content': [{'id': 0, 'name': '自动'}, {'id': 1, 'name': '手动'}], 'select_index': 0}, 'expose_time': {'select_content': [{'id': 0, 'name': 25}, {'id': 1, 'name': 30}, {'id': 2, 'name': 75}, {'id': 3, 'name': 100}, {'id': 4, 'name': 120}, {'id': 5, 'name': 150}, {'id': 6, 'name': 250}, {'id': 7, 'name': 300}, {'id': 8, 'name': 425}, {'id': 9, 'name': 600}, {'id': 10, 'name': 1000}, {'id': 11, 'name': 1250}, {'id': 12, 'name': 1750}, {'id': 13, 'name': 2500}, {'id': 14, 'name': 3000}, {'id': 15, 'name': 6000}, {'id': 16, 'name': 10000}], 'select_index': 0}, 'white_balance_blue': 128, 'white_balance_grenn': 128, 'white_balance_mode': 0, 'white_balance_red': 128}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
 预期相应: 
-{'code': 200, 'message': 'success', 'data': {'supportedLightTypes': [2, 1, 3], 'currentLightType': 1, 'lightnessType': 100}}
+{'data': {'analog_gain': {'current': 128, 'range': [1, 255]}, 'expose_mode': {'select_content': [{'id': 0, 'name': '自动'}, {'id': 1, 'name': '手动'}], 'select_index': 0}, 'expose_time': {'select_content': [{'id': 0, 'name': 25}, {'id': 1, 'name': 30}, {'id': 2, 'name': 75}, {'id': 3, 'name': 100}, {'id': 4, 'name': 120}, {'id': 5, 'name': 150}, {'id': 6, 'name': 250}, {'id': 7, 'name': 300}, {'id': 8, 'name': 425}, {'id': 9, 'name': 600}, {'id': 10, 'name': 1000}, {'id': 11, 'name': 1250}, {'id': 12, 'name': 1750}, {'id': 13, 'name': 2500}, {'id': 14, 'name': 3000}, {'id': 15, 'name': 6000}, {'id': 16, 'name': 10000}], 'select_index': 0}, 'white_balance_blue': 128, 'white_balance_grenn': 128, 'white_balance_mode': 0, 'white_balance_red': 128}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
 
 
-True - $.code 值为 200
-True - $.message 值为 success
-True - $.data.supportedLightTypes[0] 值为 2
-True - $.data.supportedLightTypes[1] 值为 1
-True - $.data.supportedLightTypes[2] 值为 3
-True - $.data.currentLightType 值为 1
-True - $.data.lightnessType 值为 100
+True - $.data.analog_gain.current 值为 128
+True - $.data.analog_gain.range[0] 值为 1
+True - $.data.analog_gain.range[1] 值为 255
+True - $.data.expose_mode.select_content[0].id 值为 0
+True - $.data.expose_mode.select_content[0].name 值为 自动
+True - $.data.expose_mode.select_content[1].id 值为 1
+True - $.data.expose_mode.select_content[1].name 值为 手动
+True - $.data.expose_mode.select_index 值为 0
+True - $.data.expose_time.select_content[0].id 值为 0
+True - $.data.expose_time.select_content[0].name 值为 25
+True - $.data.expose_time.select_content[1].id 值为 1
+True - $.data.expose_time.select_content[1].name 值为 30
+True - $.data.expose_time.select_content[2].id 值为 2
+True - $.data.expose_time.select_content[2].name 值为 75
+True - $.data.expose_time.select_content[3].id 值为 3
+True - $.data.expose_time.select_content[3].name 值为 100
+True - $.data.expose_time.select_content[4].id 值为 4
+True - $.data.expose_time.select_content[4].name 值为 120
+True - $.data.expose_time.select_content[5].id 值为 5
+True - $.data.expose_time.select_content[5].name 值为 150
+True - $.data.expose_time.select_content[6].id 值为 6
+True - $.data.expose_time.select_content[6].name 值为 250
+True - $.data.expose_time.select_content[7].id 值为 7
+True - $.data.expose_time.select_content[7].name 值为 300
+True - $.data.expose_time.select_content[8].id 值为 8
+True - $.data.expose_time.select_content[8].name 值为 425
+True - $.data.expose_time.select_content[9].id 值为 9
+True - $.data.expose_time.select_content[9].name 值为 600
+True - $.data.expose_time.select_content[10].id 值为 10
+True - $.data.expose_time.select_content[10].name 值为 1000
+True - $.data.expose_time.select_content[11].id 值为 11
+True - $.data.expose_time.select_content[11].name 值为 1250
+True - $.data.expose_time.select_content[12].id 值为 12
+True - $.data.expose_time.select_content[12].name 值为 1750
+True - $.data.expose_time.select_content[13].id 值为 13
+True - $.data.expose_time.select_content[13].name 值为 2500
+True - $.data.expose_time.select_content[14].id 值为 14
+True - $.data.expose_time.select_content[14].name 值为 3000
+True - $.data.expose_time.select_content[15].id 值为 15
+True - $.data.expose_time.select_content[15].name 值为 6000
+True - $.data.expose_time.select_content[16].id 值为 16
+True - $.data.expose_time.select_content[16].name 值为 10000
+True - $.data.expose_time.select_index 值为 0
+True - $.data.white_balance_blue 值为 128
+True - $.data.white_balance_grenn 值为 128
+True - $.data.white_balance_mode 值为 0
+True - $.data.white_balance_red 值为 128
+True - $.err_code 值为 0
+True - $.err_msg 值为 ok
+True - $.req_id 值为 54C3E1D5-855F-AB4F-8C9A-B481CB500583
+
 
 
         </pre>
@@ -665,7 +837,7 @@ True - $.data.lightnessType 值为 100
 </tr>
 
 <tr id='pt1_7' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_api_07</div></td>
+    <td class='passCase'><div class='testcase'>test_api_7</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -680,431 +852,28 @@ True - $.data.lightnessType 值为 100
         <pre>
         
 pt1_7: 
-用例编号: MagicMirror-API-testcase__007
-测试内容: 获取国标配置信息
-GET请求地址: http://localhost:8081/monitor/terminal/southInfo/getGBConfig
-请求头: {}
+用例编号: IPCWeb-API-testcase__008
+测试内容: 获取 智能LED 参数
+POST请求地址: http://128.128.144.65/jvt_v1/image/get_video_LED_param?requestTime=1676074913640
+请求头: None
 请求体: 
-{"deviceCode":"30211009066218A6B00","token":"--------------------&gt; token"}
+{"req_id":"54C3E1D5-855F-AB4F-8C9A-B481CB500583"}
 响应内容: 
-{'code': 200, 'message': 'success', 'data': {'sipPort': 5060, 'sipServerID': '51000000992000000001', 'sipHost': 'gateway.mj.sctel.com.cn', 'heartBeatNum': 3, 'expirationTime': 86400, 'hearBeatTime': 30}}
+{'data': {'auto_led': {'select_content': [{'id': 1, 'name': '手动'}], 'select_index': 1}, 'light_value': {'current': 100, 'range': [0, 100]}}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
 预期相应: 
-{'code': 200, 'message': 'success', 'data': {'sipPort': 5060, 'sipServerID': '51000000992000000001', 'sipHost': 'gateway.mj.sctel.com.cn', 'heartBeatNum': 3, 'expirationTime': 86400, 'hearBeatTime': 30}}
+{'data': {'auto_led': {'select_content': [{'id': 1, 'name': '手动'}], 'select_index': 1}, 'light_value': {'current': 100, 'range': [0, 100]}}, 'err_code': 0, 'err_msg': 'ok', 'req_id': '54C3E1D5-855F-AB4F-8C9A-B481CB500583'}
+
+
+True - $.data.auto_led.select_content[0].id 值为 1
+True - $.data.auto_led.select_content[0].name 值为 手动
+True - $.data.auto_led.select_index 值为 1
+True - $.data.light_value.current 值为 100
+True - $.data.light_value.range[0] 值为 0
+True - $.data.light_value.range[1] 值为 100
+True - $.err_code 值为 0
+True - $.err_msg 值为 ok
+True - $.req_id 值为 54C3E1D5-855F-AB4F-8C9A-B481CB500583
 
-
-True - $.code 值为 200
-True - $.message 值为 success
-True - $.data.sipPort 值为 5060
-True - $.data.sipServerID 值为 51000000992000000001
-True - $.data.sipHost 值为 gateway.mj.sctel.com.cn
-True - $.data.heartBeatNum 值为 3
-True - $.data.expirationTime 值为 86400
-True - $.data.hearBeatTime 值为 30
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1_8' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_api_08</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1_8')" >
-        通过</a>
-
-    <div id='div_pt1_8' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1_8').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1_8: 
-用例编号: MagicMirror-API-testcase__008
-测试内容: 查询网络状态
-GET请求地址: http://localhost:8081/monitor/terminal/southInfo/getNetInfo
-请求头: {}
-请求体: 
-{"deviceCode":"30211009066218A6B00","token":"--------------------&gt; token"}
-响应内容: 
-{'code': 200, 'message': 'success', 'data': {'netCards': [{'isDynamic': 1, 'iP': '192.168.6.143', 'netCardType': 2, 'mac': '00:90:66:21:8a:6b', 'status': 1}, {'isDynamic': 0, 'iP': '', 'netCardType': 1, 'mac': '', 'status': 0}]}}
-预期相应: 
-{'code': 200, 'message': 'success', 'data': {'netCards': [{'isDynamic': 1, 'iP': '192.168.6.143', 'netCardType': 2, 'mac': '00:90:66:21:8a:6b', 'status': 1}, {'isDynamic': 0, 'iP': '', 'netCardType': 1, 'mac': '', 'status': 0}]}}
-
-
-True - $.code 值为 200
-True - $.message 值为 success
-True - $.data.netCards[0].isDynamic 值为 1
-True - $.data.netCards[0].iP 值为 192.168.6.143
-True - $.data.netCards[0].netCardType 值为 2
-True - $.data.netCards[0].mac 值为 00:90:66:21:8a:6b
-True - $.data.netCards[0].status 值为 1
-True - $.data.netCards[1].isDynamic 值为 0
-True - $.data.netCards[1].iP 值为 
-True - $.data.netCards[1].netCardType 值为 1
-True - $.data.netCards[1].mac 值为 
-True - $.data.netCards[1].status 值为 0
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1_9' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_api_09</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1_9')" >
-        通过</a>
-
-    <div id='div_pt1_9' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1_9').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1_9: 
-用例编号: MagicMirror-API-testcase__009
-测试内容: 获取SD卡信息
-GET请求地址: http://localhost:8081/monitor/terminal/terminal/sdCardInfo/30211009066218A6B00
-请求头: {}
-请求体: 
-{"token":"--------------------&gt; token"}
-响应内容: 
-{'code': 200, 'message': 'SUCCESS', 'data': {'sdStat': 0, 'sdCardSize': 0, 'sdCardAvailableSize': 0, 'sdCardUsedSize': 0}}
-预期相应: 
-{'code': 200, 'message': 'SUCCESS', 'data': {'sdStat': 0, 'sdCardSize': 0, 'sdCardAvailableSize': 0, 'sdCardUsedSize': 0}}
-
-
-True - $.code 值为 200
-True - $.message 值为 SUCCESS
-True - $.data.sdStat 值为 0
-True - $.data.sdCardSize 值为 0
-True - $.data.sdCardAvailableSize 值为 0
-True - $.data.sdCardUsedSize 值为 0
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1_10' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_api_10</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1_10')" >
-        通过</a>
-
-    <div id='div_pt1_10' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1_10').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1_10: 
-用例编号: MagicMirror-API-testcase__010
-测试内容: 获取叠加字符水印默认配置
-GET请求地址: http://localhost:8081/monitor/terminal/southInfo/getOSDConfig
-请求头: {}
-请求体: 
-{"deviceCode":"30211009066218A6B00","ChannelCode":"30211009066218A6B00","token":"--------------------&gt; token"}
-响应内容: 
-{'code': 200, 'message': 'success', 'data': {'channelDisplay': 0, 'dateDisplay': 1, 'channel': '', 'compositions': [{'display': 0, 'name': '', 'index': 1}, {'display': 0, 'name': '', 'index': 2}, {'display': 0, 'name': '', 'index': 3}, {'display': 0, 'name': '', 'index': 4}, {'display': 0, 'name': '', 'index': 5}, {'display': 0, 'name': '', 'index': 6}], 'weekDisplay': 1}}
-预期相应: 
-{'code': 200, 'message': 'success', 'data': {'channelDisplay': 0, 'dateDisplay': 1, 'channel': '', 'compositions': [{'display': 0, 'name': '', 'index': 1}, {'display': 0, 'name': '', 'index': 2}, {'display': 0, 'name': '', 'index': 3}, {'display': 0, 'name': '', 'index': 4}, {'display': 0, 'name': '', 'index': 5}, {'display': 0, 'name': '', 'index': 6}], 'weekDisplay': 1}}
-
-
-True - $.code 值为 200
-True - $.message 值为 success
-True - $.data.channelDisplay 值为 0
-True - $.data.dateDisplay 值为 1
-True - $.data.channel 值为 
-True - $.data.compositions[0].display 值为 0
-True - $.data.compositions[0].name 值为 
-True - $.data.compositions[0].index 值为 1
-True - $.data.compositions[1].display 值为 0
-True - $.data.compositions[1].name 值为 
-True - $.data.compositions[1].index 值为 2
-True - $.data.compositions[2].display 值为 0
-True - $.data.compositions[2].name 值为 
-True - $.data.compositions[2].index 值为 3
-True - $.data.compositions[3].display 值为 0
-True - $.data.compositions[3].name 值为 
-True - $.data.compositions[3].index 值为 4
-True - $.data.compositions[4].display 值为 0
-True - $.data.compositions[4].name 值为 
-True - $.data.compositions[4].index 值为 5
-True - $.data.compositions[5].display 值为 0
-True - $.data.compositions[5].name 值为 
-True - $.data.compositions[5].index 值为 6
-True - $.data.weekDisplay 值为 1
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1_11' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_api_11</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1_11')" >
-        通过</a>
-
-    <div id='div_pt1_11' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1_11').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1_11: 
-用例编号: MagicMirror-API-testcase__011
-测试内容: 获取设备默认本地录像策略
-GET请求地址: http://localhost:8081/monitor/terminal/southInfo/getLocalStorageConfig
-请求头: {}
-请求体: 
-{"deviceCode":"30211009066218A6B00","token":"--------------------&gt; token"}
-响应内容: 
-{'code': 200, 'message': 'success', 'data': {'streamType': 1, 'defenceTime': None, 'storageType': 0}}
-预期相应: 
-{'code': 200, 'message': 'success', 'data': {'streamType': 1, 'defenceTime': None, 'storageType': 0}}
-
-
-True - $.code 值为 200
-True - $.message 值为 success
-True - $.data.streamType 值为 1
-True - $.data.defenceTime 值为 None
-True - $.data.storageType 值为 0
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1_12' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_api_12</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1_12')" >
-        通过</a>
-
-    <div id='div_pt1_12' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1_12').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1_12: 
-用例编号: MagicMirror-API-testcase__012
-测试内容: 获取设备上报信息
-GET请求地址: http://localhost:8081/monitor/terminal/deviceinfo/getDevice/30211009066218A6B00
-请求头: {'token': '--------------------&gt; token'}
-请求体: 
-{}
-响应内容: 
-{'code': 200, 'message': 'success', 'data': {'upTime': 1677719797, 'softwareMD5': '2297d04b6ac76a00ca49358a16016885', 'ip': '171.221.240.123', 'firmwareMD5': '2297d04b6ac76a00ca49358a16016885', 'hardwareVersion': 'V1.0', 'protocolVersion': 3, 'deviceCode': '30211009066218A6B00', 'firmwareVersion': 'V55BQHA1GPWL04P01', 'deviceName': '9ffdc46285e5d34d', 'softwareVersion': 'V55BQHA1GPWL04P01'}}
-预期相应: 
-{'code': 200, 'message': 'success', 'data': {'upTime': 1677719797, 'softwareMD5': '2297d04b6ac76a00ca49358a16016885', 'ip': '171.221.240.123', 'firmwareMD5': '2297d04b6ac76a00ca49358a16016885', 'hardwareVersion': 'V1.0', 'protocolVersion': 3, 'deviceCode': '30211009066218A6B00', 'firmwareVersion': 'V55BQHA1GPWL04P01', 'deviceName': '9ffdc46285e5d34d', 'softwareVersion': 'V55BQHA1GPWL04P01'}}
-
-
-True - $.code 值为 200
-True - $.message 值为 success
-True - $.data.upTime 值为 1677719797
-True - $.data.softwareMD5 值为 2297d04b6ac76a00ca49358a16016885
-True - $.data.ip 值为 171.221.240.123
-True - $.data.firmwareMD5 值为 2297d04b6ac76a00ca49358a16016885
-True - $.data.hardwareVersion 值为 V1.0
-True - $.data.protocolVersion 值为 3
-True - $.data.deviceCode 值为 30211009066218A6B00
-True - $.data.firmwareVersion 值为 V55BQHA1GPWL04P01
-True - $.data.deviceName 值为 9ffdc46285e5d34d
-True - $.data.softwareVersion 值为 V55BQHA1GPWL04P01
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1_13' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_api_13</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1_13')" >
-        通过</a>
-
-    <div id='div_pt1_13' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1_13').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1_13: 
-用例编号: MagicMirror-API-testcase__013
-测试内容: 获取音频默认状态
-GET请求地址: http://localhost:8081/monitor/terminal/southInfo/getAudioConfig
-请求头: {}
-请求体: 
-{"deviceCode":"30211009066218A6B00","token":"--------------------&gt; token"}
-响应内容: 
-{'code': 200, 'message': 'success', 'data': {'audioInStatus': 2, 'audioOut': 78, 'audioOutStatus': 2, 'audioIn': 80}}
-预期相应: 
-{'code': 200, 'message': 'success', 'data': {'audioInStatus': 2, 'audioOut': 78, 'audioOutStatus': 2, 'audioIn': 80}}
-
-
-True - $.code 值为 200
-True - $.message 值为 success
-True - $.data.audioInStatus 值为 2
-True - $.data.audioOut 值为 78
-True - $.data.audioOutStatus 值为 2
-True - $.data.audioIn 值为 80
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1_14' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_api_14</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1_14')" >
-        通过</a>
-
-    <div id='div_pt1_14' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1_14').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1_14: 
-用例编号: MagicMirror-API-testcase__014
-测试内容: 获取主码流视频配置
-GET请求地址: http://localhost:8081/monitor/terminal/southInfo/getVideoConfig
-请求头: {}
-请求体: 
-{"deviceCode":"30211009066218A6B00","streamType":0,"token":"--------------------&gt; token"}
-响应内容: 
-{'code': 200, 'message': 'success', 'data': {'rateLimit': '64~12288', 'frameRateLimit': [5, 10, 15, 20, 25], 'currImageQuality': 'H', 'iframeInterval': 2000, 'currFrameRate': 15, 'resolution': ['1280*720', '1280*960', '1920*1080', '2560*1440'], 'rateType': 2, 'currResolution': '2560*1440', 'rate': 2048, 'encodeType': ['H.264', 'H.265'], 'imageQuality': ['H', 'L', 'M'], 'currEncode': 'H.265'}}
-预期相应: 
-{'code': 200, 'message': 'success', 'data': {'rateLimit': '64~12288', 'frameRateLimit': [5, 10, 15, 20, 25], 'currImageQuality': 'H', 'iframeInterval': 2000, 'currFrameRate': 15, 'resolution': ['1280*720', '1280*960', '1920*1080', '2560*1440'], 'rateType': 2, 'currResolution': '2560*1440', 'rate': 2048, 'encodeType': ['H.264', 'H.265'], 'imageQuality': ['H', 'L', 'M'], 'currEncode': 'H.265'}}
-
-
-True - $.code 值为 200
-True - $.message 值为 success
-True - $.data.rateLimit 值为 64~12288
-True - $.data.frameRateLimit[0] 值为 5
-True - $.data.frameRateLimit[1] 值为 10
-True - $.data.frameRateLimit[2] 值为 15
-True - $.data.frameRateLimit[3] 值为 20
-True - $.data.frameRateLimit[4] 值为 25
-True - $.data.currImageQuality 值为 H
-True - $.data.iframeInterval 值为 2000
-True - $.data.currFrameRate 值为 15
-True - $.data.resolution[0] 值为 1280*720
-True - $.data.resolution[1] 值为 1280*960
-True - $.data.resolution[2] 值为 1920*1080
-True - $.data.resolution[3] 值为 2560*1440
-True - $.data.rateType 值为 2
-True - $.data.currResolution 值为 2560*1440
-True - $.data.rate 值为 2048
-True - $.data.encodeType[0] 值为 H.264
-True - $.data.encodeType[1] 值为 H.265
-True - $.data.imageQuality[0] 值为 H
-True - $.data.imageQuality[1] 值为 L
-True - $.data.imageQuality[2] 值为 M
-True - $.data.currEncode 值为 H.265
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='ft1_15' class='none'>
-    <td class='failCase'><div class='testcase'>test_api_15</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1_15')" >
-        失败</a>
-
-    <div id='div_ft1_15' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1_15').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft1_15: 
-用例编号: MagicMirror-API-testcase__015
-测试内容: 获取子码流视频配置
-GET请求地址: http://localhost:8081/monitor/terminal/southInfo/getVideoConfig
-请求头: {}
-请求体: 
-{"deviceCode":"30211009066218A6B00","streamType":1,"channelCode":"30211009066218A6B00","token":"--------------------&gt; token"}
-响应内容: 
-{'code': 200, 'message': 'success', 'data': {'rateLimit': '64~12288', 'frameRateLimit': [5, 10, 15, 20, 25], 'currImageQuality': 'H', 'iframeInterval': 2000, 'currFrameRate': 15, 'resolution': ['1280*720', '1280*960', '1920*1080', '2560*1440'], 'rateType': 2, 'currResolution': '2560*1440', 'rate': 2048, 'encodeType': ['H.264', 'H.265'], 'imageQuality': ['H', 'L', 'M'], 'currEncode': 'H.265'}}
-预期相应: 
-{'code': 200, 'message': 'success', 'data': {'rateLimit': '64~12288', 'frameRateLimit': [5, 10, 15, 20, 25], 'currImageQuality': 'H', 'iframeInterval': 2000, 'currFrameRate': 15, 'resolution': ['1280*720', '640*480', '704*576'], 'rateType': 2, 'currResolution': '1280*720', 'rate': 768, 'encodeType': ['H.264', 'H.265'], 'imageQuality': ['H', 'L', 'M'], 'currEncode': 'H.265'}}
-
-
-True - $.code 值为 200
-True - $.message 值为 success
-True - $.data.rateLimit 值为 64~12288
-True - $.data.frameRateLimit[0] 值为 5
-True - $.data.frameRateLimit[1] 值为 10
-True - $.data.frameRateLimit[2] 值为 15
-True - $.data.frameRateLimit[3] 值为 20
-True - $.data.frameRateLimit[4] 值为 25
-True - $.data.currImageQuality 值为 H
-True - $.data.iframeInterval 值为 2000
-True - $.data.currFrameRate 值为 15
-True - $.data.resolution[0] 值为 1280*720
-False - $.data.resolution[1] 值为 640*480
-Traceback (most recent call last):
-  File "C:\Users\11\AppData\Local\Programs\Python\Python311\Lib\site-packages\ddt.py", line 220, in wrapper
-    return func(self, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "d:\Windows数据移动到此文件夹\Documents\GitHub\LEARN__HTTP-Interface-Automate-Test\task1\testcase\test_magic_mirror.py", line 73, in test_api
-    self.assertTrue(assert_two_json_equal(expect_json, resp.json(), "$"))
-AssertionError: False is not true
 
 
         </pre>
@@ -1116,11 +885,11 @@ AssertionError: False is not true
 
 <tr id='total_row'>
     <td>总计</td>
-    <td>15</td>
-    <td>13</td>
-    <td>2</td>
+    <td>7</td>
+    <td>6</td>
+    <td>1</td>
     <td>0</td>
-    <td>通过率：86.7%</td>
+    <td>通过率：85.7%</td>
     
 </tr>
 </table>
@@ -1165,8 +934,8 @@ AssertionError: False is not true
                         radius : '60%',
                         center: ['50%', '60%'],
                         data:[
-                            {value:13, name:'通过'},
-                            {value:2, name:'失败'},
+                            {value:6, name:'通过'},
+                            {value:1, name:'失败'},
                             {value:0, name:'错误'}
                         ],
                         itemStyle: {

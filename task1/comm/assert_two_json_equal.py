@@ -37,7 +37,10 @@ def assert_two_json_equal(expect_json, new_json, jsonpath):
     #当前对象是字符串, 数字, 布尔值, 空值
     else:
         test_name = "{} 值为 {}".format(jsonpath, expect_json)
-        print("{} - {}".format(expect_json == new_json, test_name))
+        if expect_json == new_json:
+            print("{} - {}".format(True, test_name))
+        else:
+            print("--------------------> {} - {} <--------------------".format(False, test_name))
         #断言结果
         if expect_json != new_json:
             return False

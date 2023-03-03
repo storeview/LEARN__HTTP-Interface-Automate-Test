@@ -32,5 +32,5 @@ def get_token():
     response = requests.post(url=url, data=payload, headers=headers)
     data = response.json()
     token = jsonpath.jsonpath(data, "$..token")
-    token = ["--------------------> token"]
+    #token = ["--------------------> token"]
     return(token[0])

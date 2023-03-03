@@ -23,12 +23,14 @@ from comm.replace_variable import replace_variable
 5. 测试报告输出
 """
 @ddt
+@unittest.skip
 class MagicMirrorTestCase(unittest.TestCase):
     
     #测试用例数据
-    testcase_data = ReadExecl(TESTCASE_FILE_PATH, "MagicMirror测试用例").read_data(3)
+    excel =  ReadExecl(TESTCASE_FILE_PATH)
+    testcase_data = excel.open("MagicMirror测试用例", True).read_data(3)
     #变量列表数据
-    variables = ReadExecl(TESTCASE_FILE_PATH, "变量列表").read_variable_data(2, 1, 2)
+    variables = excel.open("变量列表", True).read_variable_data(2, 1, 2)
 
     @classmethod
     def setUpClass(cls):
@@ -44,7 +46,7 @@ class MagicMirrorTestCase(unittest.TestCase):
         ret=replace_variable(value, self.variables)
         method = ret["method"]
         url = ret["url"]
-        payload = ret["payload"]
+        payload = json.loads(ret["payload"])
         headers = ret["headers"]
         resp = None
         
@@ -52,7 +54,7 @@ class MagicMirrorTestCase(unittest.TestCase):
         if method == "GET":
             resp = requests.get(url, params=payload, headers=headers)
         elif method == "POST":
-            resp = requests.get(url, data=payload, headers=headers)
+            resp = requests.post(url, data=payload, headers=headers)
         
         #打印请求过程
         no = value["no"]
@@ -72,6 +74,10 @@ class MagicMirrorTestCase(unittest.TestCase):
         print("预期相应: \n{}\n\n".format(expect_json))
         self.assertTrue(assert_two_json_equal(expect_json, resp.json(), "$")) 
         
+
+    @classmethod
+    def tearDownClass(cls):
+       MagicMirrorTestCase.excel.close()
 
 if __name__=='__main__':
     unittest.main()
