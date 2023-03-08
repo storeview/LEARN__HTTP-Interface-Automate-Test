@@ -7,6 +7,7 @@ import requests
 import json
 from comm.assert_two_json_equal import assert_two_json_equal
 from comm.replace_variable import replace_variable
+from comm.write_log import log
 
 """
 测试魔镜接口
@@ -38,7 +39,7 @@ class IPCWebTestCase(unittest.TestCase):
         first_testcase = IPCWebTestCase.testcase_data[0]
         ret = replace_variable(first_testcase, IPCWebTestCase.variables)
         IPCWebTestCase.token = get_token_of_ipc_web(ret["url"], IPCWebTestCase.variables["EncryptedUsername"], IPCWebTestCase.variables["EncryptedPassword"])
-        print("--------------------> setUpClass <--------------------")
+        log.info("获取魔镜token: {}".format(IPCWebTestCase.token))
 
     @data(*testcase_data[1:])
     def test_api(self, value):
@@ -48,11 +49,15 @@ class IPCWebTestCase(unittest.TestCase):
         ret=replace_variable(value, self.variables)
         method = ret["method"]
         url = ret["url"]
+        module = ret["module"]
         headers = ret["headers"]
         payload = ret["payload"]
         resp = None
+        no = ret["no"]
+        title = ret["title"]
         
         #执行请求
+        log.info("执行用例编号: {}".format(no))
         if method == "GET":
             payload = json.loads(payload)
             resp = requests.get(url, params=payload, headers=headers)
@@ -60,18 +65,13 @@ class IPCWebTestCase(unittest.TestCase):
             resp = requests.post(url, data=payload, headers=headers)
         
         #打印请求过程
-        no = ret["no"]
-        title = ret["title"]
-        print("\n用例编号: {}\n测试内容: {}\n{}请求地址: {}\n请求头: {}\n请求体: \n{}".format(no, title, method, url, headers, payload))
+        print("\n用例编号: {}\n测试内容: [{}] {}\n{}请求地址: {}\n请求头: {}\n请求体: \n{}".format(no, module, title, method, url, headers, payload))
+        print("原始响应(raw): \n{}\n".format(resp.text))
+        print("响应内容(json): \n{}".format(resp.json()))
 
-        #打印响应内容
-        print("响应内容: \n{}".format(resp.json()))
-
-
+        #记录返回值到Excel中
         row_number = ret["row_number"]
         col_number = ret["col_number"]
-        #记录返回值
-        
         IPCWebTestCase.sheet.write_data(row_number, col_number, json.dumps(resp.json()))
 
         #响应断言
@@ -81,22 +81,21 @@ class IPCWebTestCase(unittest.TestCase):
             #2.断言两个json值完全一致
             expect_json = json.loads(ret["assert"])
             #打印预期相应
-            print("预期相应: \n{}\n\n".format(expect_json))
+            print("预期响应: \n{}\n\n".format(expect_json))
             
             self.assertTrue(assert_two_json_equal(expect_json, resp.json(), "$"), "和预期的JSON值不同") 
             IPCWebTestCase.sheet.write_data(row_number, col_number+1, "Pass")
+            log.warning("用例断言成功!")
         except AssertionError as e:
+            #如果try中有两个断言, 这里AssertionError只根据第一个断言的结果进行判断.
+            log.warning("用例断言失败!")
             IPCWebTestCase.sheet.write_data(row_number, col_number+1, "Fail")
             raise e
 
-        
-        print()
-        
 
     @classmethod
     def tearDownClass(cls):
         IPCWebTestCase.excel.close()
-        print("--------------------> tearDownClass <--------------------")
 
 if __name__=='__main__':
     unittest.main()

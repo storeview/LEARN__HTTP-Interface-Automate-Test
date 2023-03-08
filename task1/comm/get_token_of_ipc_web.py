@@ -17,5 +17,4 @@ def get_token_of_ipc_web(url, username, password):
     response = requests.post(url=url, data=payload, headers=headers)
     data = response.json()
     token = jsonpath.jsonpath(data, "$..token")
-    #token = ["--------------------> token"]
     return(token[0])

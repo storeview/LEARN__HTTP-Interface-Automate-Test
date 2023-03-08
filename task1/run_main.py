@@ -2,6 +2,7 @@ import unittest
 from comm.handle_path import TESTCASE_DIR, REPORT_FILE_PATH
 from report.HwTestReport_local import HTMLTestReport
 from lib.HTMLTestRunnerNew import HTMLTestRunner
+from comm.write_log import log
 
 """
 执行测试主程序
@@ -23,5 +24,7 @@ with open(REPORT_FILE_PATH, 'wb') as report:
                             description="HTTP协议测试(参数获取及设置)",
                             tester='llf')
     #执行测试套件
+    log.info("开始执行测试套件.")
     runner.run(suite)
+    log.info("测试套件执行结束.")
 #'''

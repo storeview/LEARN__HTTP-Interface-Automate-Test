@@ -15,6 +15,8 @@ TESTCASE_DIR = os.path.join(BASE_DIR, "testcase")
 DATA_DIR = os.path.join(BASE_DIR, "datasource")
 #测试报告路径
 REPORT_DIR = os.path.join(BASE_DIR, "report")
+#日志文件路径
+LOG_DIR = os.path.join(BASE_DIR, "logs")
 
 
 #测试用例Excel表格路径

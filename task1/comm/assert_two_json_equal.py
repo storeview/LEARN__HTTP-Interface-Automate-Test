@@ -36,11 +36,12 @@ def assert_two_json_equal(expect_json, new_json, jsonpath):
             ret = ret and assert_two_json_equal(expect_json[item], new_json2, jsonpath+"."+item)
     #当前对象是字符串, 数字, 布尔值, 空值
     else:
-        test_name = "{} 值为 {}".format(jsonpath, expect_json)
+        test_name = "{} 预期值为 {}".format(jsonpath, expect_json)
         if expect_json == new_json:
             print("{} - {}".format(True, test_name))
         else:
             print("--------------------> {} - {} <--------------------".format(False, test_name))
+            print("--------------------> 实际值是: " + str(new_json))
         #断言结果
         if expect_json != new_json:
             return False
