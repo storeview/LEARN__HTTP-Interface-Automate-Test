@@ -784,3 +784,734 @@
 2023-03-08 17:19:32,993 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__047
 2023-03-08 17:19:34,003 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__048
 2023-03-08 17:19:34,014 - [run_main.py -->ling:29] - INFO: 测试套件执行结束.
+2023-03-08 17:30:46,494 - [run_main.py -->ling:27] - INFO: 开始执行测试套件.
+2023-03-08 17:30:47,516 - [test_ipc_web_api.py -->ling:42] - INFO: 获取魔镜token: 19E02C49-85E6-854C-939C-BD40C1FB976A
+2023-03-08 17:30:47,517 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__002
+2023-03-08 17:30:47,525 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__003
+2023-03-08 17:30:48,540 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__004
+2023-03-08 17:30:49,558 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__005
+2023-03-08 17:30:50,567 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__006
+2023-03-08 17:30:51,589 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__007
+2023-03-08 17:30:52,598 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__008
+2023-03-08 17:30:52,606 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__009
+2023-03-08 17:30:52,613 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__010
+2023-03-08 17:30:52,619 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__011
+2023-03-08 17:30:52,628 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__012
+2023-03-08 17:30:52,635 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__013
+2023-03-08 17:30:53,650 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__014
+2023-03-08 17:30:53,673 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__015
+2023-03-08 17:30:53,682 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__016
+2023-03-08 17:30:53,690 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__017
+2023-03-08 17:30:53,702 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__018
+2023-03-08 17:30:53,713 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__019
+2023-03-08 17:30:54,729 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__020
+2023-03-08 17:30:54,739 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__021
+2023-03-08 17:30:54,757 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__022
+2023-03-08 17:30:54,764 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__023
+2023-03-08 17:30:54,778 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__024
+2023-03-08 17:30:54,798 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__025
+2023-03-08 17:30:55,808 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__026
+2023-03-08 17:30:56,828 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__027
+2023-03-08 17:30:57,845 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__028
+2023-03-08 17:30:58,857 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__029
+2023-03-08 17:30:59,894 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__030
+2023-03-08 17:31:00,930 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__031
+2023-03-08 17:31:01,946 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__032
+2023-03-08 17:31:01,953 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__033
+2023-03-08 17:31:01,960 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__034
+2023-03-08 17:31:01,969 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__035
+2023-03-08 17:31:01,978 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__036
+2023-03-08 17:31:02,998 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__037
+2023-03-08 17:31:04,007 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__038
+2023-03-08 17:31:05,026 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__039
+2023-03-08 17:31:06,037 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__040
+2023-03-08 17:31:06,052 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__041
+2023-03-08 17:31:06,060 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__042
+2023-03-08 17:31:06,069 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__043
+2023-03-08 17:31:06,092 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__044
+2023-03-08 17:31:06,100 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__045
+2023-03-08 17:31:06,120 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__046
+2023-03-08 17:31:07,146 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__047
+2023-03-08 17:31:07,157 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__048
+2023-03-08 17:31:08,171 - [run_main.py -->ling:29] - INFO: 测试套件执行结束.
+2023-03-08 17:31:31,361 - [run_main.py -->ling:27] - INFO: 开始执行测试套件.
+2023-03-08 17:31:32,377 - [test_ipc_web_api.py -->ling:42] - INFO: 获取魔镜token: C6AB7695-2F70-DA4E-96DA-8B1131A1E60C
+2023-03-08 17:31:32,377 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__002
+2023-03-08 17:31:32,529 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:32,529 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__003
+2023-03-08 17:31:33,652 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:33,652 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__004
+2023-03-08 17:31:34,771 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:34,772 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__005
+2023-03-08 17:31:35,886 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:35,887 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__006
+2023-03-08 17:31:37,000 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:37,001 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__007
+2023-03-08 17:31:38,122 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:38,122 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__008
+2023-03-08 17:31:38,232 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:38,232 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__009
+2023-03-08 17:31:39,362 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:39,362 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__010
+2023-03-08 17:31:40,479 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:40,479 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__011
+2023-03-08 17:31:41,600 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:41,601 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__012
+2023-03-08 17:31:42,727 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:42,727 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__013
+2023-03-08 17:31:43,849 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:43,849 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__014
+2023-03-08 17:31:43,860 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__015
+2023-03-08 17:31:43,970 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:43,971 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__016
+2023-03-08 17:31:45,089 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:45,089 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__017
+2023-03-08 17:31:46,206 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:46,206 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__018
+2023-03-08 17:31:46,328 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:46,328 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__019
+2023-03-08 17:31:47,447 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:47,447 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__020
+2023-03-08 17:31:47,559 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:47,559 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__021
+2023-03-08 17:31:48,682 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:48,682 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__022
+2023-03-08 17:31:49,803 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:49,804 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__023
+2023-03-08 17:31:50,920 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:50,920 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__024
+2023-03-08 17:31:52,042 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:52,042 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__025
+2023-03-08 17:31:52,100 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言失败!
+2023-03-08 17:31:52,158 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__026
+2023-03-08 17:31:53,280 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:53,280 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__027
+2023-03-08 17:31:54,402 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:54,402 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__028
+2023-03-08 17:31:54,517 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:54,518 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__029
+2023-03-08 17:31:55,634 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:55,634 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__030
+2023-03-08 17:31:55,748 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:55,748 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__031
+2023-03-08 17:31:56,869 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:56,870 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__032
+2023-03-08 17:31:57,984 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:57,984 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__033
+2023-03-08 17:31:59,111 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:31:59,112 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__034
+2023-03-08 17:32:00,239 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:32:00,240 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__035
+2023-03-08 17:32:01,361 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:32:01,362 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__036
+2023-03-08 17:32:02,493 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:32:02,494 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__037
+2023-03-08 17:32:03,621 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:32:03,621 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__038
+2023-03-08 17:32:04,766 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:32:04,766 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__039
+2023-03-08 17:32:05,890 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:32:05,891 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__040
+2023-03-08 17:32:07,014 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:32:07,014 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__041
+2023-03-08 17:32:08,131 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:32:08,132 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__042
+2023-03-08 17:32:09,256 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:32:09,256 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__043
+2023-03-08 17:32:10,383 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:32:10,384 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__044
+2023-03-08 17:32:10,494 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:32:10,495 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__045
+2023-03-08 17:32:11,615 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:32:11,616 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__046
+2023-03-08 17:32:11,731 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:32:11,731 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__047
+2023-03-08 17:32:12,851 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:32:12,851 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__048
+2023-03-08 17:32:13,982 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:32:14,040 - [run_main.py -->ling:29] - INFO: 测试套件执行结束.
+2023-03-08 17:33:43,122 - [run_main.py -->ling:27] - INFO: 开始执行测试套件.
+2023-03-08 17:33:43,154 - [test_ipc_web_api.py -->ling:42] - INFO: 获取魔镜token: 60CA961C-2029-FA4C-ADA0-4E5055817BF3
+2023-03-08 17:33:43,154 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__002
+2023-03-08 17:33:43,287 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:33:43,287 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__003
+2023-03-08 17:33:44,408 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:33:44,408 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__004
+2023-03-08 17:33:45,532 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:33:45,532 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__005
+2023-03-08 17:33:46,671 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:33:46,671 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__006
+2023-03-08 17:33:47,795 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:33:47,796 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__007
+2023-03-08 17:33:48,912 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:33:48,912 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__008
+2023-03-08 17:33:50,036 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:33:50,036 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__009
+2023-03-08 17:33:51,148 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:33:51,149 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__010
+2023-03-08 17:33:52,271 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:33:52,271 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__011
+2023-03-08 17:33:52,383 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:33:52,383 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__012
+2023-03-08 17:33:53,500 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:33:53,501 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__013
+2023-03-08 17:33:54,629 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:33:54,629 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__014
+2023-03-08 17:33:54,638 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__015
+2023-03-08 17:33:55,752 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:33:55,752 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__016
+2023-03-08 17:33:55,874 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:33:55,874 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__017
+2023-03-08 17:33:56,990 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:33:56,991 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__018
+2023-03-08 17:33:58,120 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:33:58,121 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__019
+2023-03-08 17:33:58,240 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:33:58,240 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__020
+2023-03-08 17:33:58,357 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:33:58,357 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__021
+2023-03-08 17:33:59,476 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:33:59,477 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__022
+2023-03-08 17:34:00,605 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:34:00,606 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__023
+2023-03-08 17:34:01,720 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:34:01,720 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__024
+2023-03-08 17:34:02,839 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:34:02,839 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__025
+2023-03-08 17:34:03,907 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言失败!
+2023-03-08 17:34:03,963 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__026
+2023-03-08 17:34:05,097 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:34:05,097 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__027
+2023-03-08 17:34:06,222 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:34:06,222 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__028
+2023-03-08 17:34:07,341 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:34:07,342 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__029
+2023-03-08 17:34:08,470 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:34:08,470 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__030
+2023-03-08 17:34:09,595 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:34:09,596 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__031
+2023-03-08 17:34:10,716 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:34:10,716 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__032
+2023-03-08 17:34:11,831 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:34:11,831 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__033
+2023-03-08 17:34:12,969 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:34:12,970 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__034
+2023-03-08 17:34:14,092 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:34:14,092 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__035
+2023-03-08 17:34:15,212 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:34:15,212 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__036
+2023-03-08 17:34:16,348 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:34:16,349 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__037
+2023-03-08 17:34:16,464 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:34:16,464 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__038
+2023-03-08 17:34:17,527 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言失败!
+2023-03-08 17:34:17,582 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__039
+2023-03-08 17:34:17,696 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:34:17,696 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__040
+2023-03-08 17:34:18,821 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:34:18,821 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__041
+2023-03-08 17:34:19,944 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:34:19,944 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__042
+2023-03-08 17:34:21,075 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:34:21,076 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__043
+2023-03-08 17:34:22,192 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:34:22,192 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__044
+2023-03-08 17:34:23,315 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:34:23,315 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__045
+2023-03-08 17:34:24,434 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:34:24,434 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__046
+2023-03-08 17:34:24,547 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:34:24,548 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__047
+2023-03-08 17:34:25,681 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:34:25,681 - [test_ipc_web_api.py -->ling:60] - INFO: 执行用例编号: IPCWeb-API-testcase__048
+2023-03-08 17:34:26,812 - [test_ipc_web_api.py -->ling:88] - WARNING: 用例断言成功!
+2023-03-08 17:34:26,871 - [run_main.py -->ling:29] - INFO: 测试套件执行结束.
+2023-03-08 17:48:50,861 - [run_main.py -->ling:27] - INFO: 开始执行测试套件.
+2023-03-08 17:48:51,886 - [test_ipc_web_api.py -->ling:42] - INFO: 获取魔镜token: CDE6D810-9C71-9949-B72C-8E52FC58DF9C
+2023-03-08 17:48:51,887 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__041
+2023-03-08 17:48:51,910 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__049
+2023-03-08 17:48:52,921 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__050
+2023-03-08 17:48:52,935 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__051
+2023-03-08 17:48:52,942 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__052
+2023-03-08 17:48:52,954 - [run_main.py -->ling:29] - INFO: 测试套件执行结束.
+2023-03-08 17:49:28,318 - [run_main.py -->ling:27] - INFO: 开始执行测试套件.
+2023-03-08 17:49:29,328 - [test_ipc_web_api.py -->ling:42] - INFO: 获取魔镜token: 7B70C46A-20ED-DD40-A9C3-AC9A12AA6A01
+2023-03-08 17:49:29,329 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__041
+2023-03-08 17:49:30,351 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__049
+2023-03-08 17:49:31,459 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:49:31,528 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__050
+2023-03-08 17:49:32,594 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:49:32,654 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__051
+2023-03-08 17:49:33,721 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:49:33,777 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__052
+2023-03-08 17:49:34,995 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:49:35,123 - [run_main.py -->ling:29] - INFO: 测试套件执行结束.
+2023-03-08 17:50:56,640 - [run_main.py -->ling:27] - INFO: 开始执行测试套件.
+2023-03-08 17:50:57,660 - [test_ipc_web_api.py -->ling:42] - INFO: 获取魔镜token: 425CFDB8-C197-D543-BD49-51B471F500EC
+2023-03-08 17:50:57,660 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__002
+2023-03-08 17:50:57,874 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:50:57,874 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__003
+2023-03-08 17:50:58,994 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:50:58,995 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__004
+2023-03-08 17:51:00,092 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:51:00,154 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__005
+2023-03-08 17:51:01,294 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:01,294 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__006
+2023-03-08 17:51:02,385 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:51:02,445 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__007
+2023-03-08 17:51:03,612 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:03,613 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__008
+2023-03-08 17:51:04,745 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:04,745 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__009
+2023-03-08 17:51:05,840 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:51:05,962 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__010
+2023-03-08 17:51:07,086 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:07,087 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__011
+2023-03-08 17:51:08,211 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:08,212 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__012
+2023-03-08 17:51:09,343 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:09,343 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__013
+2023-03-08 17:51:10,483 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:10,484 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__014
+2023-03-08 17:51:10,492 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__015
+2023-03-08 17:51:11,639 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:11,640 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__016
+2023-03-08 17:51:12,713 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:51:12,770 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__017
+2023-03-08 17:51:13,890 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:13,890 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__018
+2023-03-08 17:51:15,012 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:15,013 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__019
+2023-03-08 17:51:15,131 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:15,132 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__020
+2023-03-08 17:51:16,258 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:16,259 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__021
+2023-03-08 17:51:17,389 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:51:17,450 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__022
+2023-03-08 17:51:18,580 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:18,581 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__023
+2023-03-08 17:51:19,712 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:19,713 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__024
+2023-03-08 17:51:19,781 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:51:19,834 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__025
+2023-03-08 17:51:20,909 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:51:20,963 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__026
+2023-03-08 17:51:21,089 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:21,090 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__027
+2023-03-08 17:51:22,153 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:51:22,217 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__028
+2023-03-08 17:51:23,337 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:23,337 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__029
+2023-03-08 17:51:24,458 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:24,458 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__030
+2023-03-08 17:51:25,589 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:25,590 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__031
+2023-03-08 17:51:26,705 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:26,706 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__032
+2023-03-08 17:51:27,831 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:27,831 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__033
+2023-03-08 17:51:28,946 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:28,947 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__034
+2023-03-08 17:51:30,097 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:30,097 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__035
+2023-03-08 17:51:30,165 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:51:30,244 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__036
+2023-03-08 17:51:30,373 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:30,374 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__037
+2023-03-08 17:51:31,464 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:51:31,529 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__038
+2023-03-08 17:51:32,754 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:32,755 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__039
+2023-03-08 17:51:33,883 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:33,883 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__040
+2023-03-08 17:51:34,953 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:51:35,009 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__041
+2023-03-08 17:51:36,019 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__042
+2023-03-08 17:51:36,135 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:36,135 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__043
+2023-03-08 17:51:37,260 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:37,260 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__044
+2023-03-08 17:51:38,386 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:38,386 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__045
+2023-03-08 17:51:39,514 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:39,514 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__046
+2023-03-08 17:51:40,636 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:40,636 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__047
+2023-03-08 17:51:41,706 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:51:41,764 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__048
+2023-03-08 17:51:42,837 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:51:42,898 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__049
+2023-03-08 17:51:44,050 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:44,050 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__050
+2023-03-08 17:51:44,210 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:44,210 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__051
+2023-03-08 17:51:45,338 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:45,338 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__052
+2023-03-08 17:51:46,544 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:51:46,615 - [run_main.py -->ling:29] - INFO: 测试套件执行结束.
+2023-03-08 17:55:30,408 - [run_main.py -->ling:27] - INFO: 开始执行测试套件.
+2023-03-08 17:55:31,426 - [test_ipc_web_api.py -->ling:42] - INFO: 获取魔镜token: BE2382DE-6244-1544-B5F2-D68F7E9C4D5C
+2023-03-08 17:55:31,426 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__002
+2023-03-08 17:55:32,513 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:32,571 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__003
+2023-03-08 17:55:33,642 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:33,699 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__004
+2023-03-08 17:55:34,771 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:34,830 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__005
+2023-03-08 17:55:35,909 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:35,966 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__006
+2023-03-08 17:55:37,050 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:37,111 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__007
+2023-03-08 17:55:38,182 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:38,240 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__008
+2023-03-08 17:55:38,318 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:38,372 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__009
+2023-03-08 17:55:39,439 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:39,496 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__010
+2023-03-08 17:55:40,563 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:40,622 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__011
+2023-03-08 17:55:41,690 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:41,756 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__012
+2023-03-08 17:55:42,834 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:42,890 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__013
+2023-03-08 17:55:43,968 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:44,027 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__014
+2023-03-08 17:55:44,048 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__015
+2023-03-08 17:55:44,118 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:44,187 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__016
+2023-03-08 17:55:45,254 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:45,312 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__017
+2023-03-08 17:55:46,392 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:46,450 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__018
+2023-03-08 17:55:47,527 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:47,602 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__019
+2023-03-08 17:55:48,672 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:48,741 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__020
+2023-03-08 17:55:49,810 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:49,868 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__021
+2023-03-08 17:55:50,934 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:50,991 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__022
+2023-03-08 17:55:52,062 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:52,119 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__023
+2023-03-08 17:55:53,213 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:53,272 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__024
+2023-03-08 17:55:53,340 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:53,397 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__025
+2023-03-08 17:55:54,478 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:54,540 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__026
+2023-03-08 17:55:55,621 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:55,680 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__027
+2023-03-08 17:55:56,751 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:56,807 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__028
+2023-03-08 17:55:57,869 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:57,931 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__029
+2023-03-08 17:55:58,013 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:58,077 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__030
+2023-03-08 17:55:59,153 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:55:59,225 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__031
+2023-03-08 17:56:00,292 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:56:00,351 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__032
+2023-03-08 17:56:00,422 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:56:00,484 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__033
+2023-03-08 17:56:01,552 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:56:01,619 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__034
+2023-03-08 17:56:02,694 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:56:02,768 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__035
+2023-03-08 17:56:03,852 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:56:03,919 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__036
+2023-03-08 17:56:05,003 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:56:05,089 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__037
+2023-03-08 17:56:06,166 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:56:06,238 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__038
+2023-03-08 17:56:07,301 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:56:07,365 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__039
+2023-03-08 17:56:08,485 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:56:08,563 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__040
+2023-03-08 17:56:09,631 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:56:09,690 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__041
+2023-03-08 17:56:10,765 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:56:10,823 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__042
+2023-03-08 17:56:11,892 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:56:11,951 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__043
+2023-03-08 17:56:13,036 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:56:13,096 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__044
+2023-03-08 17:56:14,178 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:56:14,239 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__045
+2023-03-08 17:56:15,330 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:56:15,404 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__046
+2023-03-08 17:56:16,504 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:56:16,562 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__047
+2023-03-08 17:56:17,634 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:56:17,704 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__048
+2023-03-08 17:56:17,794 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:56:17,853 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__049
+2023-03-08 17:56:18,992 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:56:18,993 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__050
+2023-03-08 17:56:20,195 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:56:20,196 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__051
+2023-03-08 17:56:21,324 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:56:21,324 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__052
+2023-03-08 17:56:22,465 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:56:22,533 - [run_main.py -->ling:29] - INFO: 测试套件执行结束.
+2023-03-08 17:57:44,827 - [run_main.py -->ling:27] - INFO: 开始执行测试套件.
+2023-03-08 17:57:45,844 - [test_ipc_web_api.py -->ling:42] - INFO: 获取魔镜token: EA20B4FF-8803-B447-9EFE-635DC727C86D
+2023-03-08 17:57:45,845 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__002
+2023-03-08 17:57:47,010 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:57:47,011 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__003
+2023-03-08 17:57:48,144 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:57:48,144 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__004
+2023-03-08 17:57:49,289 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:57:49,289 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__005
+2023-03-08 17:57:49,449 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:57:49,450 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__006
+2023-03-08 17:57:50,578 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:57:50,579 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__007
+2023-03-08 17:57:50,708 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:57:50,709 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__008
+2023-03-08 17:57:51,838 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:57:51,838 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__009
+2023-03-08 17:57:52,956 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:57:52,957 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__010
+2023-03-08 17:57:54,080 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:57:54,080 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__011
+2023-03-08 17:57:55,208 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:57:55,208 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__012
+2023-03-08 17:57:56,329 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:57:56,329 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__013
+2023-03-08 17:57:57,471 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:57:57,471 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__014
+2023-03-08 17:57:57,489 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__015
+2023-03-08 17:57:57,613 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:57:57,613 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__016
+2023-03-08 17:57:58,734 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:57:58,734 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__017
+2023-03-08 17:57:59,858 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:57:59,858 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__018
+2023-03-08 17:57:59,980 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:57:59,980 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__019
+2023-03-08 17:58:01,120 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:01,121 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__020
+2023-03-08 17:58:01,259 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:01,259 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__021
+2023-03-08 17:58:02,408 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:02,408 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__022
+2023-03-08 17:58:03,714 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:03,715 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__023
+2023-03-08 17:58:03,855 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:03,855 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__024
+2023-03-08 17:58:04,020 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:04,020 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__025
+2023-03-08 17:58:05,109 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:58:05,175 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__026
+2023-03-08 17:58:06,315 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:06,316 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__027
+2023-03-08 17:58:07,451 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:07,451 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__028
+2023-03-08 17:58:08,588 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:08,589 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__029
+2023-03-08 17:58:09,727 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:09,727 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__030
+2023-03-08 17:58:10,849 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:10,849 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__031
+2023-03-08 17:58:12,010 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:12,011 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__032
+2023-03-08 17:58:13,173 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:13,173 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__033
+2023-03-08 17:58:14,343 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:14,344 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__034
+2023-03-08 17:58:15,475 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:15,476 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__035
+2023-03-08 17:58:16,668 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:16,668 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__036
+2023-03-08 17:58:17,810 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:17,810 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__037
+2023-03-08 17:58:17,937 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:17,937 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__038
+2023-03-08 17:58:19,012 - [test_ipc_web_api.py -->ling:94] - WARNING: 用例断言失败!
+2023-03-08 17:58:19,074 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__039
+2023-03-08 17:58:20,343 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:20,343 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__040
+2023-03-08 17:58:21,655 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:21,655 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__041
+2023-03-08 17:58:22,854 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:22,854 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__042
+2023-03-08 17:58:24,024 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:24,024 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__043
+2023-03-08 17:58:25,183 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:25,183 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__044
+2023-03-08 17:58:26,479 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:26,480 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__045
+2023-03-08 17:58:27,611 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:27,611 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__046
+2023-03-08 17:58:28,761 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:28,761 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__047
+2023-03-08 17:58:29,913 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:29,913 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__048
+2023-03-08 17:58:30,053 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:30,054 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__049
+2023-03-08 17:58:31,203 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:31,203 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__050
+2023-03-08 17:58:32,331 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:32,331 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__051
+2023-03-08 17:58:33,463 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:33,463 - [test_ipc_web_api.py -->ling:63] - INFO: 执行用例编号: IPCWeb-API-testcase__052
+2023-03-08 17:58:33,622 - [test_ipc_web_api.py -->ling:91] - WARNING: 用例断言成功!
+2023-03-08 17:58:33,686 - [run_main.py -->ling:29] - INFO: 测试套件执行结束.
+2023-03-08 18:02:43,059 - [run_main.py -->ling:27] - INFO: 开始执行测试套件.
+2023-03-08 18:02:44,077 - [test_ipc_web_api.py -->ling:42] - INFO: 获取魔镜token: 5D636F98-EDAD-2841-A7B2-FD1848485010
+2023-03-08 18:02:44,077 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__002
+2023-03-08 18:02:45,228 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:02:45,228 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__003
+2023-03-08 18:02:46,355 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:02:46,355 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__004
+2023-03-08 18:02:47,491 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:02:47,491 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__005
+2023-03-08 18:02:48,614 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:02:48,615 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__006
+2023-03-08 18:02:49,742 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:02:49,743 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__007
+2023-03-08 18:02:50,867 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:02:50,867 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__008
+2023-03-08 18:02:52,004 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:02:52,004 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__009
+2023-03-08 18:02:53,126 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:02:53,127 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__010
+2023-03-08 18:02:54,247 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:02:54,247 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__011
+2023-03-08 18:02:55,381 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:02:55,382 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__012
+2023-03-08 18:02:56,509 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:02:56,509 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__013
+2023-03-08 18:02:57,640 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:02:57,640 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__014
+2023-03-08 18:02:57,648 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__015
+2023-03-08 18:02:58,789 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:02:58,789 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__016
+2023-03-08 18:02:59,923 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:02:59,924 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__017
+2023-03-08 18:03:01,044 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:01,044 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__018
+2023-03-08 18:03:02,177 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:02,177 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__019
+2023-03-08 18:03:02,306 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:02,307 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__020
+2023-03-08 18:03:03,441 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:03,442 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__021
+2023-03-08 18:03:04,589 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:04,589 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__022
+2023-03-08 18:03:05,722 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:05,722 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__023
+2023-03-08 18:03:06,845 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:06,845 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__024
+2023-03-08 18:03:07,967 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:07,967 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__025
+2023-03-08 18:03:08,044 - [test_ipc_web_api.py -->ling:95] - WARNING: 用例断言失败!
+2023-03-08 18:03:08,101 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__026
+2023-03-08 18:03:08,224 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:08,224 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__027
+2023-03-08 18:03:09,341 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:09,341 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__028
+2023-03-08 18:03:10,474 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:10,474 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__029
+2023-03-08 18:03:11,603 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:11,603 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__030
+2023-03-08 18:03:12,727 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:12,727 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__031
+2023-03-08 18:03:13,853 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:13,853 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__032
+2023-03-08 18:03:14,985 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:14,985 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__033
+2023-03-08 18:03:16,111 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:16,112 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__034
+2023-03-08 18:03:17,268 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:17,268 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__035
+2023-03-08 18:03:18,401 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:18,402 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__036
+2023-03-08 18:03:19,547 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:19,547 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__037
+2023-03-08 18:03:21,103 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:21,103 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__038
+2023-03-08 18:03:22,236 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:22,236 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__039
+2023-03-08 18:03:23,364 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:23,365 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__040
+2023-03-08 18:03:24,536 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:24,536 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__041
+2023-03-08 18:03:25,667 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:25,668 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__042
+2023-03-08 18:03:26,803 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:26,803 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__043
+2023-03-08 18:03:27,923 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:27,924 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__044
+2023-03-08 18:03:29,061 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:29,061 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__045
+2023-03-08 18:03:30,194 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:30,195 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__046
+2023-03-08 18:03:31,333 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:31,334 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__047
+2023-03-08 18:03:32,454 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:32,454 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__048
+2023-03-08 18:03:33,596 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:33,596 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__049
+2023-03-08 18:03:33,727 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:33,727 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__050
+2023-03-08 18:03:33,857 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:33,857 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__051
+2023-03-08 18:03:33,976 - [test_ipc_web_api.py -->ling:92] - WARNING: 用例断言成功!
+2023-03-08 18:03:33,976 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__052
+2023-03-08 18:03:34,043 - [test_ipc_web_api.py -->ling:95] - WARNING: 用例断言失败!
+2023-03-08 18:03:34,160 - [run_main.py -->ling:29] - INFO: 测试套件执行结束.
+2023-03-08 18:09:08,892 - [run_main.py -->ling:27] - INFO: 开始执行测试套件.
+2023-03-08 18:09:09,921 - [test_ipc_web_api.py -->ling:42] - INFO: 获取魔镜token: ACD9670E-F63F-814D-AED2-4048B918F69F
+2023-03-08 18:09:09,921 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__002
+2023-03-08 18:09:10,965 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__003
+2023-03-08 18:09:11,980 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__004
+2023-03-08 18:09:13,011 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__005
+2023-03-08 18:09:14,035 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__006
+2023-03-08 18:09:14,042 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__007
+2023-03-08 18:09:14,048 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__008
+2023-03-08 18:09:14,054 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__009
+2023-03-08 18:09:15,070 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__010
+2023-03-08 18:09:16,080 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__011
+2023-03-08 18:09:17,102 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__012
+2023-03-08 18:09:17,139 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__013
+2023-03-08 18:09:18,150 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__014
+2023-03-08 18:09:18,195 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__015
+2023-03-08 18:09:19,221 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__016
+2023-03-08 18:09:19,232 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__017
+2023-03-08 18:09:19,256 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__018
+2023-03-08 18:09:19,276 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__019
+2023-03-08 18:09:19,283 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__020
+2023-03-08 18:09:20,661 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__021
+2023-03-08 18:09:21,670 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__022
+2023-03-08 18:09:22,690 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__023
+2023-03-08 18:09:23,702 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__024
+2023-03-08 18:09:24,720 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__025
+2023-03-08 18:09:25,743 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__026
+2023-03-08 18:09:25,764 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__027
+2023-03-08 18:09:26,789 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__028
+2023-03-08 18:09:27,799 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__029
+2023-03-08 18:09:28,811 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__030
+2023-03-08 18:09:29,832 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__031
+2023-03-08 18:09:29,844 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__032
+2023-03-08 18:09:29,859 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__033
+2023-03-08 18:09:29,878 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__034
+2023-03-08 18:09:29,898 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__035
+2023-03-08 18:09:29,903 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__036
+2023-03-08 18:09:31,250 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__037
+2023-03-08 18:09:31,263 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__038
+2023-03-08 18:09:32,311 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__039
+2023-03-08 18:09:33,369 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__040
+2023-03-08 18:09:34,402 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__041
+2023-03-08 18:09:35,416 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__042
+2023-03-08 18:09:35,427 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__043
+2023-03-08 18:09:35,440 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__044
+2023-03-08 18:09:35,462 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__045
+2023-03-08 18:09:35,477 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__046
+2023-03-08 18:09:36,494 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__047
+2023-03-08 18:09:36,508 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__048
+2023-03-08 18:09:36,522 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__049
+2023-03-08 18:09:36,531 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__050
+2023-03-08 18:09:37,559 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__051
+2023-03-08 18:09:38,579 - [test_ipc_web_api.py -->ling:64] - INFO: 执行用例编号: IPCWeb-API-testcase__052
+2023-03-08 18:09:39,594 - [run_main.py -->ling:29] - INFO: 测试套件执行结束.

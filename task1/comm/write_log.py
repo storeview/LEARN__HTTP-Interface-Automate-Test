@@ -17,7 +17,7 @@ class Log:
         fm = logging.Formatter(formatter)
 
         mylog = logging.getLogger()
-        mylog.setLevel(logging.INFO)
+        mylog.setLevel(logging.DEBUG)
 
         #日志输出到屏幕上
         sh = logging.StreamHandler()

@@ -8,7 +8,7 @@ import json
 from comm.assert_two_json_equal import assert_two_json_equal
 from comm.replace_variable import replace_variable
 from comm.write_log import log
-
+import jsonpath
 """
 测试魔镜接口
 1. 获取登录token
@@ -43,6 +43,11 @@ class IPCWebTestCase(unittest.TestCase):
 
     @data(*testcase_data[1:])
     def test_api(self, value):
+        #不予执行
+        log.debug("value['enable']={}".format(value["enable"]))
+        if (value["enable"] == "否"):
+            log.debug("跳过该轮测试")
+            self.skipTest("不予执行")
         #准备数据
         # 变量替换(将字符串中用{{}}圈起来的变量, 替换成本来的值)
         self.variables["token"] = IPCWebTestCase.token
@@ -72,25 +77,47 @@ class IPCWebTestCase(unittest.TestCase):
         #记录返回值到Excel中
         row_number = ret["row_number"]
         col_number = ret["col_number"]
-        IPCWebTestCase.sheet.write_data(row_number, col_number, json.dumps(resp.json()))
+        IPCWebTestCase.sheet.write_data(row_number, col_number, resp.text)
+
+
 
         #响应断言
+        #1.返回码为200
         try:
-            #1.返回码为200(成功)
             self.assertEqual(resp.status_code, 200)
-            #2.断言两个json值完全一致
-            expect_json = json.loads(ret["assert"])
-            #打印预期相应
-            print("预期响应: \n{}\n\n".format(expect_json))
-            
-            self.assertTrue(assert_two_json_equal(expect_json, resp.json(), "$"), "和预期的JSON值不同") 
             IPCWebTestCase.sheet.write_data(row_number, col_number+1, "Pass")
-            log.warning("用例断言成功!")
+            log.info("返回码为200 断言成功!")
         except AssertionError as e:
-            #如果try中有两个断言, 这里AssertionError只根据第一个断言的结果进行判断.
-            log.warning("用例断言失败!")
             IPCWebTestCase.sheet.write_data(row_number, col_number+1, "Fail")
+            log.warning("返回码为200 断言失败!")
             raise e
+
+        assert_method=ret["assert_method"]
+        #2.断言两个json值完全一致
+        if assert_method == "全部JSON值相同":
+            try:
+                expect_json = json.loads(ret["assert"])
+                print("预期响应: \n{}\n\n".format(expect_json))
+                self.assertTrue(assert_two_json_equal(expect_json, resp.json(), "$"), "和预期的JSON值不同") 
+                log.info("全部JSON值相同 断言成功!")
+            except AssertionError as e:
+                IPCWebTestCase.sheet.write_data(row_number, col_number+1, "Fail")
+                log.info("全部JSON值相同 断言失败!")
+                raise e
+        #3.断言两个JSONPath值相等
+        elif assert_method == "JSONPath":
+            try:
+                data = ret["assert"]
+                jsonpath_expr = data.split("=")[0]
+                extract_val = jsonpath.jsonpath(resp.json(), jsonpath_expr)[0]
+                expect_val = data.split("=")[1]
+                print("JSONPath获取到值 \n{} = {}  预期 {}\n\n".format(jsonpath_expr, extract_val, expect_val))
+                self.assertEqual(str(expect_val), str(extract_val), "JSONPath值相等")
+                log.info("JSONPath值相等 断言成功!")
+            except AssertionError as e:
+                IPCWebTestCase.sheet.write_data(row_number, col_number+1, "Fail")
+                log.info("JSONPath值相等 断言失败!")
+                raise e
 
 
     @classmethod

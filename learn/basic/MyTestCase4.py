@@ -4,7 +4,7 @@ import unittest
 
 """
 
-@unittest.skip("也可以跳过类")
+#@unittest.skip("也可以跳过类")
 class MyTestCase(unittest.TestCase):
 
     @classmethod
@@ -22,6 +22,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_3(self):
         print(3)
+        self.skipTest("可以直接在方法中跳过")
         self.assertEqual('foo'.upper(), 'FOO')
 
     @classmethod

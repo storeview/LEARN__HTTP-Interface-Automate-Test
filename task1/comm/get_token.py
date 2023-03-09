@@ -1,6 +1,7 @@
 import jsonpath
 import requests
 import json
+from comm.write_log import log
 
 '''
 获取魔镜token
@@ -29,7 +30,11 @@ def get_token():
         "uuid": "6cb13e75-971f-4cd6-8fa4-752e8074e4cc",
         "captcha": captcha
     })
-    response = requests.post(url=url, data=payload, headers=headers)
+    try:
+        response = requests.post(url=url, data=payload, headers=headers)
+    except Exception as e:
+        log.error("网络连接超时, 请检查设备是否在线.")
+        raise e
     data = response.json()
     token = jsonpath.jsonpath(data, "$..token")
     return(token[0])
