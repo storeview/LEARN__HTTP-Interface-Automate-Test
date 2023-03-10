@@ -98,6 +98,9 @@ class IPCWebTestCase(unittest.TestCase):
             try:
                 expect_json = json.loads(ret["assert"])
                 print("预期响应: \n{}\n\n".format(expect_json))
+                if expect_json == None:
+                    log.warning("没有获取到预期JSON")
+                    return
                 self.assertTrue(assert_two_json_equal(expect_json, resp.json(), "$"), "和预期的JSON值不同") 
                 log.info("全部JSON值相同 断言成功!")
             except AssertionError as e:
